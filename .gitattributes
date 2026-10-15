@@ -1,0 +1,2 @@
+# Preserve generator output; GitHub collapses dated execution evidence by default.
+reports/** -whitespace linguist-generated=true

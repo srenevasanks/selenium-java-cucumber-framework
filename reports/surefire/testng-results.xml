@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="38" passed="38" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-15T21:21:30 IST" name="Surefire suite" finished-at="2026-10-15T21:24:55 IST" duration-ms="205122">
+    <groups>
+    </groups>
+    <test started-at="2026-10-15T21:21:30 IST" name="Surefire test" finished-at="2026-10-15T21:24:55 IST" duration-ms="205122">
+      <class name="runners.RunCucumberTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:21:42 IST" name="setup" finished-at="2026-10-15T21:21:42 IST" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:21:42 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:22:07 IST" duration-ms="24874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Customer logs in with new credentials and logs out"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer authentication"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:21:42 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:21:50 IST" duration-ms="7312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Invalid credentials are rejected"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer authentication"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:21:50 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:21:55 IST" duration-ms="5328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login requires email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer authentication"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:21:55 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:22:00 IST" duration-ms="5211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login requires email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer authentication"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:22:00 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:22:09 IST" duration-ms="8414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add the selected quantity and validate monetary totals"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:22:07 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:22:16 IST" duration-ms="9104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add the selected quantity and validate monetary totals"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:22:09 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:22:22 IST" duration-ms="13531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cart contains multiple products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:22:16 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:22:43 IST" duration-ms="26863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding the same product increases its quantity"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:22:22 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:22:31 IST" duration-ms="8722" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Remove the last product from the cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:22:31 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:22:54 IST" duration-ms="23552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cart survives navigation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:22:43 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:22:48 IST" duration-ms="5103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["New browser session has an empty cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:22:48 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:22:58 IST" duration-ms="9893" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for an existing product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product discovery"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:22:54 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:23:02 IST" duration-ms="7580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for an existing product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product discovery"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:22:58 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:23:04 IST" duration-ms="6161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a nonexistent product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product discovery"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:23:02 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:23:07 IST" duration-ms="4805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Product details display catalog attributes"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product discovery"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:23:04 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:23:15 IST" duration-ms="10476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate through a category and subcategory"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product discovery"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:23:07 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:23:14 IST" duration-ms="7582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Filter catalog by brand"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product discovery"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:23:14 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:23:23 IST" duration-ms="9060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Checkout requires a customer account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout and order placement"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:23:15 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:23:36 IST" duration-ms="20729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Checkout reviews customer addresses and order totals"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout and order placement"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:23:23 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:23:46 IST" duration-ms="22817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Payment requires cardholder information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout and order placement"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:23:36 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:24:00 IST" duration-ms="24547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place a synthetic demo order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout and order placement"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:23:46 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:24:22 IST" duration-ms="35417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register login discover and purchase a product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Complete customer journey"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:24:00 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:24:13 IST" duration-ms="13233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register a unique customer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:24:13 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:24:19 IST" duration-ms="5182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Signup requires basic account details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:24:19 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:24:24 IST" duration-ms="5214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Signup requires basic account details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:24:22 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:24:27 IST" duration-ms="4998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Signup rejects malformed email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:24:24 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:24:34 IST" duration-ms="10349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registration requires profile and address information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:24:27 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:24:35 IST" duration-ms="8283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registration requires profile and address information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:24:34 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:24:44 IST" duration-ms="10187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registration requires profile and address information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method signature="runParallelScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:24:35 IST" name="runParallelScenario" data-provider="parallelScenarios" finished-at="2026-10-15T21:24:54 IST" duration-ms="19306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Existing email cannot be registered twice"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runParallelScenario -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:runners.RunCucumberTest@f68f0dc]" started-at="2026-10-15T21:24:54 IST" name="teardown" finished-at="2026-10-15T21:24:55 IST" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- runners.RunCucumberTest -->
+      <class name="components.AdvertisementTest">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:30 IST" name="startBrowser" finished-at="2026-10-15T21:21:31 IST" duration-ms="1728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="clicksVisibleCloseChildInsideZeroSizedWrapper()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:31 IST" name="clicksVisibleCloseChildInsideZeroSizedWrapper" finished-at="2026-10-15T21:21:32 IST" duration-ms="482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicksVisibleCloseChildInsideZeroSizedWrapper -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:32 IST" name="stopBrowser" finished-at="2026-10-15T21:21:32 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:32 IST" name="startBrowser" finished-at="2026-10-15T21:21:33 IST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="closesAdTriggeredByAnInPageInteraction()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:33 IST" name="closesAdTriggeredByAnInPageInteraction" finished-at="2026-10-15T21:21:33 IST" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closesAdTriggeredByAnInPageInteraction -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:33 IST" name="stopBrowser" finished-at="2026-10-15T21:21:33 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:33 IST" name="startBrowser" finished-at="2026-10-15T21:21:34 IST" duration-ms="584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="closesDirectAdBeforeClickingThePage()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:34 IST" name="closesDirectAdBeforeClickingThePage" finished-at="2026-10-15T21:21:35 IST" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closesDirectAdBeforeClickingThePage -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:35 IST" name="stopBrowser" finished-at="2026-10-15T21:21:35 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:35 IST" name="startBrowser" finished-at="2026-10-15T21:21:35 IST" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="closesNestedAdAndRestoresThePageContext()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:35 IST" name="closesNestedAdAndRestoresThePageContext" finished-at="2026-10-15T21:21:36 IST" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closesNestedAdAndRestoresThePageContext -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:36 IST" name="stopBrowser" finished-at="2026-10-15T21:21:36 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:36 IST" name="startBrowser" finished-at="2026-10-15T21:21:37 IST" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="expandsCategoryWhenAdvertisementConsumedTheFirstClick()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:37 IST" name="expandsCategoryWhenAdvertisementConsumedTheFirstClick" finished-at="2026-10-15T21:21:38 IST" duration-ms="1112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- expandsCategoryWhenAdvertisementConsumedTheFirstClick -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:38 IST" name="stopBrowser" finished-at="2026-10-15T21:21:38 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:38 IST" name="startBrowser" finished-at="2026-10-15T21:21:38 IST" duration-ms="555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="fillsOffscreenFieldsDespiteSmoothScrollingAndBottomBanner()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:38 IST" name="fillsOffscreenFieldsDespiteSmoothScrollingAndBottomBanner" finished-at="2026-10-15T21:21:39 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillsOffscreenFieldsDespiteSmoothScrollingAndBottomBanner -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:39 IST" name="stopBrowser" finished-at="2026-10-15T21:21:39 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:39 IST" name="startBrowser" finished-at="2026-10-15T21:21:40 IST" duration-ms="606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="resumesLinkConsumedByAnAdvertisement()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:40 IST" name="resumesLinkConsumedByAnAdvertisement" finished-at="2026-10-15T21:21:40 IST" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resumesLinkConsumedByAnAdvertisement -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:40 IST" name="stopBrowser" finished-at="2026-10-15T21:21:40 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:40 IST" name="startBrowser" finished-at="2026-10-15T21:21:41 IST" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="resumesWhenClosedAdLeavesItsUrlMarkerBehind()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:41 IST" name="resumesWhenClosedAdLeavesItsUrlMarkerBehind" finished-at="2026-10-15T21:21:42 IST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resumesWhenClosedAdLeavesItsUrlMarkerBehind -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:components.AdvertisementTest@5a5a729f]" started-at="2026-10-15T21:21:42 IST" name="stopBrowser" finished-at="2026-10-15T21:21:42 IST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- components.AdvertisementTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

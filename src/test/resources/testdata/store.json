@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Blue Top",
+      "price": 500,
+      "category": "Women > Tops",
+      "brand": "Polo"
+    },
+    {
+      "id": 2,
+      "name": "Men Tshirt",
+      "price": 400,
+      "category": "Men > Tshirts",
+      "brand": "H&M"
+    }
+  ],
+  "address": {
+    "first_name": "Automation",
+    "last_name": "Customer",
+    "address1": "1 Synthetic Test Street",
+    "state": "Test State",
+    "city": "Test City",
+    "zipcode": "12345",
+    "mobile_number": "2025550100"
+  }
+}

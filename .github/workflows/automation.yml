@@ -1,0 +1,49 @@
+name: Automation Exercise UI automation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: automationexercise-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Java 17 and Maven dependency cache
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - name: Install stable Chrome and matching driver
+        id: chrome
+        uses: browser-actions/setup-chrome@v2
+        with:
+          chrome-version: stable
+          install-chromedriver: true
+      - name: Execute all scenarios
+        env:
+          CHROME_BINARY: ${{ steps.chrome.outputs.chrome-path }}
+          CHROME_DRIVER: ${{ steps.chrome.outputs.chromedriver-path }}
+        run: >-
+          mvn --batch-mode --no-transfer-progress clean test
+          -Dheadless=true -Dbrowser=chrome
+          -Dscenarios.parallel=true -Dthreads=2
+          -Dchrome.binary="$CHROME_BINARY"
+          -Dwebdriver.chrome.driver="$CHROME_DRIVER"
+      - name: Upload execution evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: automationexercise-execution-${{ github.run_number }}
+          path: |
+            reports/
+            screenshots/
+            target/surefire-reports/
+          if-no-files-found: warn
+          retention-days: 14

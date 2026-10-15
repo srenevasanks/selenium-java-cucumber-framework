@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="205.745" tests="38" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Admin\Documents\Codex\2026-10-10\project-production-quality-selenium-java-cucumber\outputs\selenium-java-cucumber-framework\target\test-classes;C:\Users\Admin\Documents\Codex\2026-10-10\project-production-quality-selenium-java-cucumber\outputs\selenium-java-cucumber-framework\target\classes;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.35.0\selenium-java-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.35.0\selenium-api-4.35.0.jar;C:\Users\Admin\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.35.0\selenium-chrome-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.35.0\selenium-chromium-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.35.0\selenium-json-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.35.0\selenium-manager-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.35.0\selenium-devtools-v137-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.35.0\selenium-devtools-v138-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.35.0\selenium-devtools-v139-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.35.0\selenium-edge-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.35.0\selenium-firefox-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.35.0\selenium-http-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.35.0\selenium-ie-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.35.0\selenium-remote-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\Admin\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api\1.53.0\opentelemetry-api-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-context\1.53.0\opentelemetry-context-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-common\1.53.0\opentelemetry-common-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.53.0\opentelemetry-exporter-logging-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.53.0\opentelemetry-sdk-common-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.53.0\opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.53.0\opentelemetry-sdk-extension-autoconfigure-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.53.0\opentelemetry-sdk-trace-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.53.0\opentelemetry-sdk-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.53.0\opentelemetry-sdk-metrics-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.53.0\opentelemetry-sdk-logs-1.53.0.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-os\4.35.0\selenium-os-4.35.0.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.35.0\selenium-safari-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.35.0\selenium-support-4.35.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.2\jackson-databind-2.19.2.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.2\jackson-annotations-2.19.2.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.2\jackson-core-2.19.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-java\7.27.2\cucumber-java-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-core\7.27.2\cucumber-core-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin\7.27.2\cucumber-gherkin-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.27.2\cucumber-gherkin-messages-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\gherkin\34.0.0\gherkin-34.0.0.jar;C:\Users\Admin\.m2\repository\org\assertj\assertj-core\3.27.4\assertj-core-3.27.4.jar;C:\Users\Admin\.m2\repository\io\cucumber\messages\28.1.0\messages-28.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\pretty-formatter\2.1.0\pretty-formatter-2.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\testng-xml-formatter\0.5.0\testng-xml-formatter-0.5.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\datatable\7.27.2\datatable-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-plugin\7.27.2\cucumber-plugin-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\docstring\7.27.2\docstring-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\html-formatter\21.13.0\html-formatter-21.13.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\junit-xml-formatter\0.8.1\junit-xml-formatter-0.8.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-testng\7.27.2\cucumber-testng-7.27.2.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Admin\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Admin\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="scenarios.parallel" value="true"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire11247052410889187702\surefirebooter-20261015212129129_3.jar C:\Users\Admin\AppData\Local\Temp\surefire11247052410889187702 2026-10-15T21-21-28_952-jvmRun1 surefire-20261015212129129_1tmp surefire_0-20261015212129129_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Admin\Documents\Codex\2026-10-10\project-production-quality-selenium-java-cucumber\outputs\selenium-java-cucumber-framework\target\test-classes;C:\Users\Admin\Documents\Codex\2026-10-10\project-production-quality-selenium-java-cucumber\outputs\selenium-java-cucumber-framework\target\classes;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.35.0\selenium-java-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.35.0\selenium-api-4.35.0.jar;C:\Users\Admin\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.35.0\selenium-chrome-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.35.0\selenium-chromium-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.35.0\selenium-json-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.35.0\selenium-manager-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.35.0\selenium-devtools-v137-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.35.0\selenium-devtools-v138-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.35.0\selenium-devtools-v139-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.35.0\selenium-edge-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.35.0\selenium-firefox-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.35.0\selenium-http-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.35.0\selenium-ie-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.35.0\selenium-remote-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\Admin\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api\1.53.0\opentelemetry-api-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-context\1.53.0\opentelemetry-context-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-common\1.53.0\opentelemetry-common-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.53.0\opentelemetry-exporter-logging-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.53.0\opentelemetry-sdk-common-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.53.0\opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.53.0\opentelemetry-sdk-extension-autoconfigure-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.53.0\opentelemetry-sdk-trace-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.53.0\opentelemetry-sdk-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.53.0\opentelemetry-sdk-metrics-1.53.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.53.0\opentelemetry-sdk-logs-1.53.0.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-os\4.35.0\selenium-os-4.35.0.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.35.0\selenium-safari-driver-4.35.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.35.0\selenium-support-4.35.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.2\jackson-databind-2.19.2.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.2\jackson-annotations-2.19.2.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.2\jackson-core-2.19.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-java\7.27.2\cucumber-java-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-core\7.27.2\cucumber-core-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin\7.27.2\cucumber-gherkin-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.27.2\cucumber-gherkin-messages-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\gherkin\34.0.0\gherkin-34.0.0.jar;C:\Users\Admin\.m2\repository\org\assertj\assertj-core\3.27.4\assertj-core-3.27.4.jar;C:\Users\Admin\.m2\repository\io\cucumber\messages\28.1.0\messages-28.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\pretty-formatter\2.1.0\pretty-formatter-2.1.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\testng-xml-formatter\0.5.0\testng-xml-formatter-0.5.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\datatable\7.27.2\datatable-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-plugin\7.27.2\cucumber-plugin-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\docstring\7.27.2\docstring-7.27.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\html-formatter\21.13.0\html-formatter-21.13.0.jar;C:\Users\Admin\.m2\repository\io\cucumber\junit-xml-formatter\0.8.1\junit-xml-formatter-0.8.1.jar;C:\Users\Admin\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Admin\.m2\repository\io\cucumber\cucumber-testng\7.27.2\cucumber-testng-7.27.2.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Admin\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Admin\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Admin\Documents\Codex\2026-10-10\project-production-quality-selenium-java-cucumber\outputs\selenium-java-cucumber-framework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire11247052410889187702\surefirebooter-20261015212129129_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="Admin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="browser" value="chrome"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\Admin\Documents\Codex\2026-10-10\project-production-quality-selenium-java-cucumber\outputs\selenium-java-cucumber-framework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="threads" value="2"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="headless" value="false"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\Admin\.codex\tmp\arg0\codex-arg0GEwDcp;C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Users\Admin\Downloads\apps\apache-maven-3.9.11\bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files (x86)\AOMEI Partition Assistant;C:\Users\Admin\AppData\Local\Programs\Python\Launcher\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Antigravity\bin;C:\Users\Admin\AppData\Roaming\npm;C:\Android\cmdline-tools\latest\bin;C:\Android\platform-tools;C:\Users\Admin\AppData\Local\GitHubDesktop\bin;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\AppData\Local\Unity\bin;C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback;C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin;C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd;C:\Users\Admin\AppData\Local\OpenAI\Codex\bin\77fbd4d52e601e0a;C:\Users\Admin\AppData\Local\OpenAI\Codex\bin\9614f1d9b40d9c4f;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="clicksVisibleCloseChildInsideZeroSizedWrapper" classname="components.AdvertisementTest" time="0.48">
+    <system-err><![CDATA[Oct 15, 2026 9:21:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="closesAdTriggeredByAnInPageInteraction" classname="components.AdvertisementTest" time="0.709">
+    <system-err><![CDATA[Oct 15, 2026 9:21:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="closesDirectAdBeforeClickingThePage" classname="components.AdvertisementTest" time="0.555">
+    <system-err><![CDATA[Oct 15, 2026 9:21:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="closesNestedAdAndRestoresThePageContext" classname="components.AdvertisementTest" time="0.53">
+    <system-err><![CDATA[Oct 15, 2026 9:21:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="expandsCategoryWhenAdvertisementConsumedTheFirstClick" classname="components.AdvertisementTest" time="1.11">
+    <system-err><![CDATA[Oct 15, 2026 9:21:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="fillsOffscreenFieldsDespiteSmoothScrollingAndBottomBanner" classname="components.AdvertisementTest" time="0.482">
+    <system-err><![CDATA[Oct 15, 2026 9:21:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="resumesLinkConsumedByAnAdvertisement" classname="components.AdvertisementTest" time="0.65">
+    <system-err><![CDATA[Oct 15, 2026 9:21:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="resumesWhenClosedAdLeavesItsUrlMarkerBehind" classname="components.AdvertisementTest" time="0.437">
+    <system-err><![CDATA[Oct 15, 2026 9:21:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Invalid credentials are rejected&quot;, &quot;Customer authentication&quot;](1)" classname="runners.RunCucumberTest" time="7.311">
+    <system-out><![CDATA[
+@regression @authentication @negative
+Scenario: Invalid credentials are rejected                                                                      # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/authentication/authentication.feature:17
+
+@regression @authentication @smoke @positive
+Scenario: Customer logs in with new credentials and logs out # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/authentication/authentication.feature:8
+
+        Browser: chrome 155.0.8059.40
+
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                                                                          # stepdefinitions.StoreSteps.openStore()
+  âœ” Given the customer opens the store                       # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer opens signup and login                                                                     # stepdefinitions.StoreSteps.openLogin()
+  âœ” And the customer opens signup and login                  # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer submits login email "nonexistent-portfolio@example.com" and password "SyntheticInvalid9!" # stepdefinitions.StoreSteps.submitLogin(java.lang.String,java.lang.String)
+  âœ” Then invalid credentials are rejected                                                                       # stepdefinitions.StoreSteps.invalidCredentials()
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:21:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Oct 15, 2026 9:21:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Login requires email and password&quot;, &quot;Customer authentication&quot;](2)" classname="runners.RunCucumberTest" time="5.327">
+    <system-out><![CDATA[
+@regression @authentication @negative
+Scenario Outline: Login requires email and password                        # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/authentication/authentication.feature:27
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                                     # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer opens signup and login                                # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer submits login email "" and password "SyntheticTest9" # stepdefinitions.StoreSteps.submitLogin(java.lang.String,java.lang.String)
+  âœ” Then login requires the "email" field                                  # stepdefinitions.StoreSteps.loginMissing(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:21:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Login requires email and password&quot;, &quot;Customer authentication&quot;](3)" classname="runners.RunCucumberTest" time="5.21">
+    <system-out><![CDATA[
+@regression @authentication @negative
+Scenario Outline: Login requires email and password                          # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/authentication/authentication.feature:28
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given a newly registered customer is signed in           # stepdefinitions.StoreSteps.registeredCustomer()
+  âœ” When the customer logs out                               # stepdefinitions.StoreSteps.logout()
+  âœ” Given the customer opens the store                                       # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer opens signup and login                                  # stepdefinitions.StoreSteps.openLogin()
+  âœ” And the customer signs in with the new account           # stepdefinitions.StoreSteps.loginNew()
+  âœ” Then the correct customer identity is displayed          # stepdefinitions.StoreSteps.signedIn()
+  âœ” When the customer submits login email "test@example.com" and password "" # stepdefinitions.StoreSteps.submitLogin(java.lang.String,java.lang.String)
+  âœ” Then login requires the "password" field                                 # stepdefinitions.StoreSteps.loginMissing(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:21:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:21:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Customer logs in with new credentials and logs out&quot;, &quot;Customer authentication&quot;](4)" classname="runners.RunCucumberTest" time="7.023">
+    <system-out><![CDATA[
+@regression @cart @smoke @positive
+Scenario Outline: Add the selected quantity and validate monetary totals         # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/cart/cart.feature:12
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                                           # stepdefinitions.StoreSteps.openStore()
+  âœ” When the customer logs out                               # stepdefinitions.StoreSteps.logout()
+  âœ” Then the customer is logged out                          # stepdefinitions.StoreSteps.signedOut()
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:22:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:22:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Add the selected quantity and validate monetary totals&quot;, &quot;Shopping cart&quot;](5)" classname="runners.RunCucumberTest" time="1.39">
+    <system-out><![CDATA[
+@regression @cart @smoke @positive
+Scenario Outline: Add the selected quantity and validate monetary totals         # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/cart/cart.feature:13
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” When the customer adds 1 of "Blue Top" to the cart                           # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” Then the cart contains 1 of "Blue Top" with the correct price and line total # stepdefinitions.StoreSteps.verifyLine(int,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:22:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:22:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Add the selected quantity and validate monetary totals&quot;, &quot;Shopping cart&quot;](6)" classname="runners.RunCucumberTest" time="7.713">
+    <system-out><![CDATA[
+@regression @cart @positive
+Scenario: Cart contains multiple products                                         # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/cart/cart.feature:16
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                                           # stepdefinitions.StoreSteps.openStore()
+  âœ” Given the customer opens the store                                            # stepdefinitions.StoreSteps.openStore()
+  âœ” When the customer adds 3 of "Blue Top" to the cart                           # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” Then the cart contains 3 of "Blue Top" with the correct price and line total # stepdefinitions.StoreSteps.verifyLine(int,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:22:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:22:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Cart contains multiple products&quot;, &quot;Shopping cart&quot;](7)" classname="runners.RunCucumberTest" time="5.817">
+    <system-out><![CDATA[
+@regression @cart @positive
+Scenario: Adding the same product increases its quantity                         # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/cart/cart.feature:24
+  âœ” When the customer adds 2 of "Blue Top" to the cart                            # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                                           # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer adds 1 of "Men Tshirt" to the cart                           # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” Then the cart contains 2 of "Blue Top" with the correct price and line total  # stepdefinitions.StoreSteps.verifyLine(int,java.lang.String)
+  âœ” And the cart contains 1 of "Men Tshirt" with the correct price and line total # stepdefinitions.StoreSteps.verifyLine(int,java.lang.String)
+  âœ” And the cart has 2 product lines and subtotal 1400 rupees                     # stepdefinitions.StoreSteps.verifySubtotal(int,int)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:22:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:22:17 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Remove the last product from the cart&quot;, &quot;Shopping cart&quot;](8)" classname="runners.RunCucumberTest" time="8.722">
+    <system-out><![CDATA[
+@regression @cart @positive
+Scenario: Remove the last product from the cart        # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/cart/cart.feature:30
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                 # stepdefinitions.StoreSteps.openStore()
+  âœ” When the customer adds 1 of "Blue Top" to the cart                           # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” When the customer adds 1 of "Blue Top" to the cart # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” And the customer removes "Blue Top" from the cart  # stepdefinitions.StoreSteps.removeProduct(java.lang.String)
+  âœ” Then the cart is empty                             # stepdefinitions.StoreSteps.emptyCart()
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:22:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:22:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Adding the same product increases its quantity&quot;, &quot;Shopping cart&quot;](9)" classname="runners.RunCucumberTest" time="12.32">
+    <system-out><![CDATA[
+@regression @cart @positive
+Scenario: Cart survives navigation                                               # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/cart/cart.feature:36
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                                           # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer adds 2 of "Blue Top" to the cart                            # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” Then the cart contains 3 of "Blue Top" with the correct price and line total # stepdefinitions.StoreSteps.verifyLine(int,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:22:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:22:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;New browser session has an empty cart&quot;, &quot;Shopping cart&quot;](10)" classname="runners.RunCucumberTest" time="5.103">
+    <system-out><![CDATA[
+@regression @cart @negative
+Scenario: New browser session has an empty cart # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/cart/cart.feature:42
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” When the customer adds 2 of "Blue Top" to the cart                           # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” Given the customer opens the store          # stepdefinitions.StoreSteps.openStore()
+  âœ” When the customer opens the cart            # stepdefinitions.StoreSteps.openCart()
+  âœ” Then the cart is empty                      # stepdefinitions.StoreSteps.emptyCart()
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:22:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:22:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Cart survives navigation&quot;, &quot;Shopping cart&quot;](11)" classname="runners.RunCucumberTest" time="6.128">
+    <system-out><![CDATA[
+@regression @catalog @smoke @positive
+Scenario Outline: Search for an existing product # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/catalog/catalog.feature:12
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store           # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer returns home and revisits the cart                          # stepdefinitions.StoreSteps.revisitCart()
+  âœ” Then the cart contains 2 of "Blue Top" with the correct price and line total # stepdefinitions.StoreSteps.verifyLine(int,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:22:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:22:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Search for an existing product&quot;, &quot;Product discovery&quot;](12)" classname="runners.RunCucumberTest" time="3.765">
+    <system-out><![CDATA[
+@regression @catalog @smoke @positive
+Scenario Outline: Search for an existing product # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/catalog/catalog.feature:13
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store           # stepdefinitions.StoreSteps.openStore()
+  âœ” When the customer searches for "Blue Top"    # stepdefinitions.StoreSteps.search(java.lang.String)
+  âœ” Then search results include "Blue Top"       # stepdefinitions.StoreSteps.foundProduct(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:22:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:22:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Search for an existing product&quot;, &quot;Product discovery&quot;](13)" classname="runners.RunCucumberTest" time="3.813">
+    <system-out><![CDATA[
+@regression @catalog @negative
+Scenario: Search for a nonexistent product                      # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/catalog/catalog.feature:16
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                          # stepdefinitions.StoreSteps.openStore()
+  âœ” When the customer searches for "Men Tshirt"  # stepdefinitions.StoreSteps.search(java.lang.String)
+  âœ” Then search results include "Men Tshirt"     # stepdefinitions.StoreSteps.foundProduct(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:22:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:22:59 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Search for a nonexistent product&quot;, &quot;Product discovery&quot;](14)" classname="runners.RunCucumberTest" time="2.346">
+    <system-out><![CDATA[
+@regression @catalog @positive
+Scenario: Product details display catalog attributes            # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/catalog/catalog.feature:21
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” When the customer searches for "portfolio-nonexistent-9173" # stepdefinitions.StoreSteps.search(java.lang.String)
+  âœ” Then search shows no matching products                      # stepdefinitions.StoreSteps.noProducts()
+  âœ” Given the customer opens the store                          # stepdefinitions.StoreSteps.openStore()
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:23:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:23:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Product details display catalog attributes&quot;, &quot;Product discovery&quot;](15)" classname="runners.RunCucumberTest" time="2.457">
+    <system-out><![CDATA[
+@regression @catalog @positive
+Scenario: Navigate through a category and subcategory # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/catalog/catalog.feature:26
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” When the customer opens product "Blue Top" from the catalog # stepdefinitions.StoreSteps.openProduct(java.lang.String)
+  âœ” Then product "Blue Top" shows its expected details          # stepdefinitions.StoreSteps.details(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:23:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:23:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Filter catalog by brand&quot;, &quot;Product discovery&quot;](16)" classname="runners.RunCucumberTest" time="7.581">
+    <system-out><![CDATA[
+@regression @catalog @positive
+Scenario: Filter catalog by brand                         # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/catalog/catalog.feature:31
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                # stepdefinitions.StoreSteps.openStore()
+  âœ” Given the customer opens the store                    # stepdefinitions.StoreSteps.openStore()
+  âœ” When the customer filters products by Polo            # stepdefinitions.StoreSteps.filterBrand()
+  âœ” When the customer browses the women tops category # stepdefinitions.StoreSteps.category()
+  âœ” Then the Polo results contain a product of that brand # stepdefinitions.StoreSteps.brandResults()
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:23:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:23:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Navigate through a category and subcategory&quot;, &quot;Product discovery&quot;](17)" classname="runners.RunCucumberTest" time="0.436">
+    <system-out><![CDATA[
+@regression @checkout @negative
+Scenario: Checkout requires a customer account         # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/checkout/checkout.feature:7
+  âœ” Then the women tops category contains Blue Top    # stepdefinitions.StoreSteps.categoryResults()
+]]></system-out>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Checkout requires a customer account&quot;, &quot;Checkout and order placement&quot;](18)" classname="runners.RunCucumberTest" time="8.624">
+    <system-out><![CDATA[
+@regression @checkout @smoke @positive
+Scenario: Checkout reviews customer addresses and order totals       # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/checkout/checkout.feature:13
+
+        Browser: chrome 155.0.8059.40
+
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                 # stepdefinitions.StoreSteps.openStore()
+  âœ” Given the customer opens the store                               # stepdefinitions.StoreSteps.openStore()
+  âœ” Given the customer opens signup and login                        # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer adds 1 of "Blue Top" to the cart # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” And the guest tries to check out                   # stepdefinitions.StoreSteps.guestCheckout()
+  âœ” Then checkout requests registration or login       # stepdefinitions.StoreSteps.guestRestriction()
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:23:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:23:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Oct 15, 2026 9:23:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:23:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Checkout reviews customer addresses and order totals&quot;, &quot;Checkout and order placement&quot;](19)" classname="runners.RunCucumberTest" time="12.104">
+    <system-out><![CDATA[
+@regression @checkout @negative
+Scenario: Payment requires cardholder information      # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/checkout/checkout.feature:22
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” And a newly registered customer is signed in                     # stepdefinitions.StoreSteps.registeredCustomer()
+  âœ” Given the customer opens the store                 # stepdefinitions.StoreSteps.openStore()
+  âœ” Given the customer opens signup and login          # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer adds 2 of "Blue Top" to the cart               # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” And the signed in customer proceeds to checkout                  # stepdefinitions.StoreSteps.checkout()
+  âœ” Then checkout shows the synthetic billing and delivery addresses # stepdefinitions.StoreSteps.addresses()
+  âœ” And order review contains 2 of "Blue Top" with the correct total # stepdefinitions.StoreSteps.review(int,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:23:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:23:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Payment requires cardholder information&quot;, &quot;Checkout and order placement&quot;](20)" classname="runners.RunCucumberTest" time="10.712">
+    <system-out><![CDATA[
+@regression @checkout @positive
+Scenario: Place a synthetic demo order                 # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/checkout/checkout.feature:32
+  âœ” And a newly registered customer is signed in       # stepdefinitions.StoreSteps.registeredCustomer()
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                 # stepdefinitions.StoreSteps.openStore()
+  âœ” Given the customer opens signup and login          # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer adds 1 of "Blue Top" to the cart # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” And the signed in customer proceeds to checkout    # stepdefinitions.StoreSteps.checkout()
+  âœ” And the customer opens payment                     # stepdefinitions.StoreSteps.payment()
+  âœ” And the customer submits empty payment details     # stepdefinitions.StoreSteps.emptyPayment()
+  âœ” Then payment requires the cardholder name          # stepdefinitions.StoreSteps.paymentRequired()
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:23:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:23:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Place a synthetic demo order&quot;, &quot;Checkout and order placement&quot;](21)" classname="runners.RunCucumberTest" time="13.836">
+    <system-out><![CDATA[
+@regression @smoke @e2e @positive
+Scenario: Register login discover and purchase a product                         # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/e2e/customer-journey.feature:3
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” And a newly registered customer is signed in       # stepdefinitions.StoreSteps.registeredCustomer()
+  âœ” Given the customer opens the store                                           # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer opens signup and login                                      # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer adds 1 of "Blue Top" to the cart # stepdefinitions.StoreSteps.addProduct(int,java.lang.String)
+  âœ” And the signed in customer proceeds to checkout    # stepdefinitions.StoreSteps.checkout()
+  âœ” And the customer opens payment                     # stepdefinitions.StoreSteps.payment()
+  âœ” When the customer registers with unique valid details                        # stepdefinitions.StoreSteps.registerValid()
+  âœ” Then registration is confirmed and the customer is signed in                 # stepdefinitions.StoreSteps.registrationConfirmed()
+  âœ” And the customer places a synthetic demo order     # stepdefinitions.StoreSteps.placeOrder()
+  âœ” Then the order is successfully confirmed           # stepdefinitions.StoreSteps.orderConfirmed()
+  âœ” When the customer logs out                                                   # stepdefinitions.StoreSteps.logout()
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:23:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:23:47 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Register a unique customer&quot;, &quot;Customer registration&quot;](22)" classname="runners.RunCucumberTest" time="13.232">
+    <system-out><![CDATA[
+@regression @registration @smoke @positive
+Scenario: Register a unique customer                             # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/registration/registration.feature:8
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” And the customer signs in with the new account                               # stepdefinitions.StoreSteps.loginNew()
+  âœ” Given the customer opens the store                           # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer opens signup and login                      # stepdefinitions.StoreSteps.openLogin()
+  âœ” And the customer searches for "Blue Top"                                     # stepdefinitions.StoreSteps.search(java.lang.String)
+  âœ” Then search results include "Blue Top"                                       # stepdefinitions.StoreSteps.foundProduct(java.lang.String)
+  âœ” When the customer opens search result "Blue Top"                             # stepdefinitions.StoreSteps.openResult(java.lang.String)
+  âœ” Then product "Blue Top" shows its expected details                           # stepdefinitions.StoreSteps.details(java.lang.String)
+  âœ” When the customer adds 2 of the open product to the cart                     # stepdefinitions.StoreSteps.addOpenProduct(int)
+  âœ” Then the cart contains 2 of "Blue Top" with the correct price and line total # stepdefinitions.StoreSteps.verifyLine(int,java.lang.String)
+  âœ” When the signed in customer proceeds to checkout                             # stepdefinitions.StoreSteps.checkout()
+  âœ” When the customer registers with unique valid details        # stepdefinitions.StoreSteps.registerValid()
+  âœ” Then registration is confirmed and the customer is signed in # stepdefinitions.StoreSteps.registrationConfirmed()
+  âœ” Then checkout shows the synthetic billing and delivery addresses             # stepdefinitions.StoreSteps.addresses()
+  âœ” And order review contains 2 of "Blue Top" with the correct total             # stepdefinitions.StoreSteps.review(int,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:24:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:24:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Signup requires basic account details&quot;, &quot;Customer registration&quot;](23)" classname="runners.RunCucumberTest" time="5.182">
+    <system-out><![CDATA[
+@regression @registration @negative
+Scenario Outline: Signup requires basic account details                       # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/registration/registration.feature:18
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” When the customer opens payment                                              # stepdefinitions.StoreSteps.payment()
+  âœ” Given the customer opens the store                                        # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer opens signup and login                                   # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer starts signup with name "" and email "test@example.com" # stepdefinitions.StoreSteps.signup(java.lang.String,java.lang.String)
+  âœ” Then signup requires the "name" field                                     # stepdefinitions.StoreSteps.signupMissing(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:24:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:24:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Register login discover and purchase a product&quot;, &quot;Complete customer journey&quot;](24)" classname="runners.RunCucumberTest" time="3.165">
+    <system-out><![CDATA[
+@regression @registration @negative
+Scenario Outline: Signup requires basic account details                 # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/registration/registration.feature:19
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” And the customer places a synthetic demo order                               # stepdefinitions.StoreSteps.placeOrder()
+  âœ” Then the order is successfully confirmed                                     # stepdefinitions.StoreSteps.orderConfirmed()
+
+        Embedding Completed customer journey [image/png 73638 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:24:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:24:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Signup requires basic account details&quot;, &quot;Customer registration&quot;](25)" classname="runners.RunCucumberTest" time="2.048">
+    <system-out><![CDATA[
+@regression @registration @negative
+Scenario: Signup rejects malformed email                                             # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/registration/registration.feature:22
+  âœ” Given the customer opens the store                                  # stepdefinitions.StoreSteps.openStore()
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” And the customer opens signup and login                             # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer starts signup with name "Automation" and email "" # stepdefinitions.StoreSteps.signup(java.lang.String,java.lang.String)
+  âœ” Then signup requires the "email" field                              # stepdefinitions.StoreSteps.signupMissing(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:24:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:24:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Signup rejects malformed email&quot;, &quot;Customer registration&quot;](26)" classname="runners.RunCucumberTest" time="2.949">
+    <system-out><![CDATA[
+@regression @registration @negative
+Scenario Outline: Registration requires profile and address information # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/registration/registration.feature:32
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                                               # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer opens signup and login                                          # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer starts signup with name "Automation" and email "invalid-email" # stepdefinitions.StoreSteps.signup(java.lang.String,java.lang.String)
+  âœ” Then signup rejects the malformed email                                          # stepdefinitions.StoreSteps.invalidSignupEmail()
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:24:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:24:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Registration requires profile and address information&quot;, &quot;Customer registration&quot;](27)" classname="runners.RunCucumberTest" time="7.399">
+    <system-out><![CDATA[
+@regression @registration @negative
+Scenario Outline: Registration requires profile and address information # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/registration/registration.feature:33
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                                  # stepdefinitions.StoreSteps.openStore()
+  âœ” Given the customer opens the store                                  # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer opens signup and login                             # stepdefinitions.StoreSteps.openLogin()
+  âœ” And the customer opens signup and login                             # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer submits registration without "password"           # stepdefinitions.StoreSteps.missingProfile(java.lang.String)
+  âœ” Then registration requires "password"                               # stepdefinitions.StoreSteps.profileRequired(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:24:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:24:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Registration requires profile and address information&quot;, &quot;Customer registration&quot;](28)" classname="runners.RunCucumberTest" time="0.885">
+    <system-out><![CDATA[
+@regression @registration @negative
+Scenario Outline: Registration requires profile and address information # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/registration/registration.feature:34
+  âœ” When the customer submits registration without "first_name"         # stepdefinitions.StoreSteps.missingProfile(java.lang.String)
+  âœ” Then registration requires "first_name"                             # stepdefinitions.StoreSteps.profileRequired(java.lang.String)
+
+        Browser: chrome 155.0.8059.40
+
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:24:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:24:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Registration requires profile and address information&quot;, &quot;Customer registration&quot;](29)" classname="runners.RunCucumberTest" time="9.302">
+    <system-out><![CDATA[
+@regression @registration @negative
+Scenario: Existing email cannot be registered twice          # file:///C:/Users/Admin/Documents/Codex/2026-10-10/project-production-quality-selenium-java-cucumber/outputs/selenium-java-cucumber-framework/src/test/resources/features/registration/registration.feature:37
+
+        Browser: chrome 155.0.8059.40
+
+  âœ” Given the customer opens the store                       # stepdefinitions.StoreSteps.openStore()
+  âœ” Given the customer opens the store                                  # stepdefinitions.StoreSteps.openStore()
+  âœ” And the customer opens signup and login                  # stepdefinitions.StoreSteps.openLogin()
+  âœ” And the customer opens signup and login                             # stepdefinitions.StoreSteps.openLogin()
+  âœ” When the customer submits registration without "address1"           # stepdefinitions.StoreSteps.missingProfile(java.lang.String)
+  âœ” Then registration requires "address1"                               # stepdefinitions.StoreSteps.profileRequired(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Oct 15, 2026 9:24:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+Oct 15, 2026 9:24:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.35.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runParallelScenario[&quot;Existing email cannot be registered twice&quot;, &quot;Customer registration&quot;](30)" classname="runners.RunCucumberTest" time="19.306">
+    <system-out><![CDATA[  âœ” Given a newly registered customer is signed in           # stepdefinitions.StoreSteps.registeredCustomer()
+  âœ” When the customer logs out                               # stepdefinitions.StoreSteps.logout()
+  âœ” And the customer attempts signup with the existing email # stepdefinitions.StoreSteps.duplicateSignup()
+  âœ” Then duplicate signup is rejected                        # stepdefinitions.StoreSteps.duplicateRejected()
+]]></system-out>
+  </testcase>
+</testsuite>
