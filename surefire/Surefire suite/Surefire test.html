@@ -1,0 +1,270 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>38/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 15 21:21:30 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>205 seconds (205122 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Checkout requires a customer account", "Checkout and order placement"</td>
+<td></td>
+<td>9</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Existing email cannot be registered twice", "Customer registration"</td>
+<td></td>
+<td>19</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Search for an existing product", "Product discovery"</td>
+<td></td>
+<td>9</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Search for a nonexistent product", "Product discovery"</td>
+<td></td>
+<td>6</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Register login discover and purchase a product", "Complete customer journey"</td>
+<td></td>
+<td>35</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='components.AdvertisementTest.closesAdTriggeredByAnInPageInteraction()'><b>closesAdTriggeredByAnInPageInteraction</b><br>Test class: components.AdvertisementTest</td>
+<td></td>
+<td>0</td>
+<td>components.AdvertisementTest@5a5a729f</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Registration requires profile and address information", "Customer registration"</td>
+<td></td>
+<td>8</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Filter catalog by brand", "Product discovery"</td>
+<td></td>
+<td>7</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Customer logs in with new credentials and logs out", "Customer authentication"</td>
+<td></td>
+<td>24</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='components.AdvertisementTest.expandsCategoryWhenAdvertisementConsumedTheFirstClick()'><b>expandsCategoryWhenAdvertisementConsumedTheFirstClick</b><br>Test class: components.AdvertisementTest</td>
+<td></td>
+<td>1</td>
+<td>components.AdvertisementTest@5a5a729f</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Signup requires basic account details", "Customer registration"</td>
+<td></td>
+<td>5</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Signup rejects malformed email", "Customer registration"</td>
+<td></td>
+<td>4</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='components.AdvertisementTest.resumesLinkConsumedByAnAdvertisement()'><b>resumesLinkConsumedByAnAdvertisement</b><br>Test class: components.AdvertisementTest</td>
+<td></td>
+<td>0</td>
+<td>components.AdvertisementTest@5a5a729f</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Navigate through a category and subcategory", "Product discovery"</td>
+<td></td>
+<td>10</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='components.AdvertisementTest.resumesWhenClosedAdLeavesItsUrlMarkerBehind()'><b>resumesWhenClosedAdLeavesItsUrlMarkerBehind</b><br>Test class: components.AdvertisementTest</td>
+<td></td>
+<td>0</td>
+<td>components.AdvertisementTest@5a5a729f</td></tr>
+<tr>
+<td title='components.AdvertisementTest.clicksVisibleCloseChildInsideZeroSizedWrapper()'><b>clicksVisibleCloseChildInsideZeroSizedWrapper</b><br>Test class: components.AdvertisementTest</td>
+<td></td>
+<td>0</td>
+<td>components.AdvertisementTest@5a5a729f</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "New browser session has an empty cart", "Shopping cart"</td>
+<td></td>
+<td>5</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Remove the last product from the cart", "Shopping cart"</td>
+<td></td>
+<td>8</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Adding the same product increases its quantity", "Shopping cart"</td>
+<td></td>
+<td>26</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='components.AdvertisementTest.fillsOffscreenFieldsDespiteSmoothScrollingAndBottomBanner()'><b>fillsOffscreenFieldsDespiteSmoothScrollingAndBottomBanner</b><br>Test class: components.AdvertisementTest</td>
+<td></td>
+<td>0</td>
+<td>components.AdvertisementTest@5a5a729f</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Invalid credentials are rejected", "Customer authentication"</td>
+<td></td>
+<td>7</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Registration requires profile and address information", "Customer registration"</td>
+<td></td>
+<td>10</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Payment requires cardholder information", "Checkout and order placement"</td>
+<td></td>
+<td>22</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Register a unique customer", "Customer registration"</td>
+<td></td>
+<td>13</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Registration requires profile and address information", "Customer registration"</td>
+<td></td>
+<td>10</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='components.AdvertisementTest.closesDirectAdBeforeClickingThePage()'><b>closesDirectAdBeforeClickingThePage</b><br>Test class: components.AdvertisementTest</td>
+<td></td>
+<td>0</td>
+<td>components.AdvertisementTest@5a5a729f</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Add the selected quantity and validate monetary totals", "Shopping cart"</td>
+<td></td>
+<td>8</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Place a synthetic demo order", "Checkout and order placement"</td>
+<td></td>
+<td>24</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Search for an existing product", "Product discovery"</td>
+<td></td>
+<td>7</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Add the selected quantity and validate monetary totals", "Shopping cart"</td>
+<td></td>
+<td>9</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Signup requires basic account details", "Customer registration"</td>
+<td></td>
+<td>5</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Login requires email and password", "Customer authentication"</td>
+<td></td>
+<td>5</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Login requires email and password", "Customer authentication"</td>
+<td></td>
+<td>5</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Cart survives navigation", "Shopping cart"</td>
+<td></td>
+<td>23</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Product details display catalog attributes", "Product discovery"</td>
+<td></td>
+<td>4</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='components.AdvertisementTest.closesNestedAdAndRestoresThePageContext()'><b>closesNestedAdAndRestoresThePageContext</b><br>Test class: components.AdvertisementTest</td>
+<td></td>
+<td>0</td>
+<td>components.AdvertisementTest@5a5a729f</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Cart contains multiple products", "Shopping cart"</td>
+<td></td>
+<td>13</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+<tr>
+<td title='runners.RunCucumberTest.runParallelScenario()'><b>runParallelScenario</b><br>Test class: runners.RunCucumberTest<br>Parameters: "Checkout reviews customer addresses and order totals", "Checkout and order placement"</td>
+<td></td>
+<td>20</td>
+<td>runners.RunCucumberTest@f68f0dc</td></tr>
+</table><p>
+</body>
+</html>
