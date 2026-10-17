@@ -12,7 +12,9 @@ concurrency:
   cancel-in-progress: true
 jobs:
   regression:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    env:
+      CHROME_DEVEL_SANDBOX: /opt/google/chrome/chrome-sandbox
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -37,6 +39,10 @@ jobs:
           mvn -version
           "$CHROME_BINARY" --version
           "$CHROME_DRIVER" --version
+      - name: Verify packaged Chrome sandbox helper
+        run: |
+          test -x "$CHROME_DEVEL_SANDBOX"
+          stat -c '%a %U %n' "$CHROME_DEVEL_SANDBOX"
       - name: Diagnose Chrome startup without application traffic
         env:
           CHROME_BINARY: ${{ steps.chrome.outputs.chrome-path }}

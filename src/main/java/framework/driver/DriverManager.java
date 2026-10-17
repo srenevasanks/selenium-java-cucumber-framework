@@ -35,7 +35,7 @@ public final class DriverManager {
       }
       var service = new ChromeDriverService.Builder()
           .withLogFile(logs.resolve("chrome-" + UUID.randomUUID() + ".log").toFile())
-          .withLogLevel(ChromiumDriverLogLevel.INFO)
+          .withLogLevel(ChromiumDriverLogLevel.WARNING)
           .build();
       driver = new ChromeDriver(service, options);
     }
@@ -80,3 +80,4 @@ public final class DriverManager {
     }
   }
 }
+
