@@ -1,0 +1,19 @@
+{
+  "cpuLogical": 12,
+  "memoryTotalBytes": 34096574464,
+  "memoryAvailableKiB": 20416912,
+  "os": "Microsoft Windows 11 Pro",
+  "diskFreeBytes": 134827397120,
+  "chrome": "155.0.8059.82",
+  "capturedAtUtc": "2026-10-17T19:57:32.176826+00:00",
+  "java": "17.0.12",
+  "maven": "3.9.11",
+  "chromeDriver": "155.0.8059.84",
+  "chromeDriverEvidence": "Preserved local regression driver log startup line",
+  "headless": true,
+  "viewport": "1440x1000",
+  "localDefaultWorkers": 2,
+  "pageLoadStrategy": "normal",
+  "pageLoadTimeoutSeconds": 60,
+  "explicitWaitSeconds": 30
+}

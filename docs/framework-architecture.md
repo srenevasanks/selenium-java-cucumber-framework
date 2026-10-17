@@ -51,7 +51,7 @@ flowchart TD
 
 The TestNG runner exposes sequential and parallel data providers. The `scenarios.parallel` property selects exactly one. The `threads` property controls parallel data-provider concurrency.
 
-Defaults are `scenarios.parallel=true` and `threads=2`; GitHub Actions explicitly selects 2 workers. Maven `-T` is not the scenario scheduler. Component checks execute separately from the Cucumber provider. Extent uses atomic active/peak counters to record observed concurrent scenarios as well as the configured limit; the summary JSON exposes both values for verification.
+Defaults are `scenarios.parallel=true` and `threads=2`; GitHub Actions defaults to 1 worker, with an optional manual 2-worker comparison. Maven `-T` is not the scenario scheduler. Component checks execute separately from the Cucumber provider. Extent uses atomic active/peak counters to record observed concurrent scenarios as well as the configured limit; the summary JSON exposes both values for verification.
 
 Each scenario opens a new browser. There are no static accounts, dependent scenarios or automatic test retries. A public-site failure is visible in Maven's exit code, Cucumber and Extent.
 
@@ -72,3 +72,7 @@ Two fixtures also verify continuation of an ad-consumed link and native field ed
 Runtime reports, screenshots and logs are written only beneath `target/test-output/`; Surefire uses `target/surefire-reports/`. Both are ignored and reset by `mvn clean`. TestNG generates the consolidated summary even after ordinary test failures; a JVM crash or failure before TestNG starts may prevent report generation and is not represented as an empty passing run.
 
 `reports/` retains the original dated, passing snapshot and historical repeatability evidence. It is not a runtime destination. Existing GitHub Pages URLs continue to open Extent and Cucumber directly, with no separate site landing page. Current review summaries live under a dated documentation folder. CI artifacts contain the actual run's runtime output, not the frozen snapshot.
+
+## CI-only diagnostics
+
+With ci.diagnostics=true, DriverManager enables ChromeDriver performance logs and BrowserHooks calls CiNetworkDiagnostics before evidence/cleanup. It writes whitelisted status/timing/frame data, excluding headers, cookies, query strings and request bodies. It does not intercept requests or change scenario assertions. The workflow adds a read-only Python resource sampler and ordinary verified HTTPS observations. These CI tools are not a replacement execution architecture and are not required for local Java runs. See the [dated CI investigation](ci-investigation-2026-10-18/README.md).

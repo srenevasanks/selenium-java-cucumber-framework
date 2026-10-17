@@ -1,0 +1,81 @@
+[
+  {
+    "feature": "Customer authentication",
+    "scenario": "Login requires email and password",
+    "line": 28,
+    "uri": "authentication/authentication.feature",
+    "resolvedSteps": [
+      "the customer submits login email \"test@example.com\" and password \"\"",
+      "login requires the \"password\" field"
+    ],
+    "failures": [
+      {
+        "stage": "steps",
+        "step": "the customer opens the store",
+        "message": "org.openqa.selenium.TimeoutException: Expected condition failed: Expected page / with header a[href='/products']; actual URL: https://automationexercise.com/ (tried for 30 second(s) with 500 milliseconds interval)",
+        "frameworkTrace": [
+          "at framework.pages.BasePage.awaitPage(BasePage.java:107)",
+          "at framework.pages.BasePage.open(BasePage.java:118)",
+          "at stepdefinitions.StoreSteps.openStore(StoreSteps.java:19)"
+        ]
+      }
+    ],
+    "baselineRun": "https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39052648633",
+    "screenshot": "../review-2026-10-17/ci-login-origin-tls-525.png"
+  },
+  {
+    "feature": "Shopping cart",
+    "scenario": "Cart contains multiple products",
+    "line": 16,
+    "uri": "cart/cart.feature",
+    "resolvedSteps": [
+      "the customer adds 2 of \"Blue Top\" to the cart",
+      "the customer adds 1 of \"Men Tshirt\" to the cart",
+      "the cart contains 2 of \"Blue Top\" with the correct price and line total",
+      "the cart contains 1 of \"Men Tshirt\" with the correct price and line total",
+      "the cart has 2 product lines and subtotal 1400 rupees"
+    ],
+    "failures": [
+      {
+        "stage": "steps",
+        "step": "the customer adds 2 of \"Blue Top\" to the cart",
+        "message": "org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000\n  (Session info: chrome=155.0.8059.84)",
+        "frameworkTrace": [
+          "Command: clickElement (opaque session/element IDs omitted)",
+          "at framework.pages.BasePage.lambda$click$1(BasePage.java:39)",
+          "at framework.pages.BasePage.click(BasePage.java:31)",
+          "at framework.pages.BasePage.transition(BasePage.java:78)",
+          "at framework.components.Header.products(Header.java:11)",
+          "at stepdefinitions.StoreSteps.openProduct(StoreSteps.java:165)",
+          "at stepdefinitions.StoreSteps.addProduct(StoreSteps.java:229)"
+        ]
+      }
+    ],
+    "baselineRun": "https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39052648633",
+    "screenshot": "../review-2026-10-17/ci-cart-renderer-timeout.png"
+  },
+  {
+    "feature": "Customer registration",
+    "scenario": "Registration requires profile and address information",
+    "line": 34,
+    "uri": "registration/registration.feature",
+    "resolvedSteps": [
+      "the customer submits registration without \"address1\"",
+      "registration requires \"address1\""
+    ],
+    "failures": [
+      {
+        "stage": "steps",
+        "step": "the customer opens the store",
+        "message": "org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.282\n  (Session info: chrome=155.0.8059.84)",
+        "frameworkTrace": [
+          "Command: get https://automationexercise.com",
+          "at framework.pages.BasePage.open(BasePage.java:117)",
+          "at stepdefinitions.StoreSteps.openStore(StoreSteps.java:19)"
+        ]
+      }
+    ],
+    "baselineRun": "https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39052648633",
+    "screenshot": "../review-2026-10-17/ci-registration-renderer-timeout.png"
+  }
+]

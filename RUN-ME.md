@@ -76,4 +76,4 @@ For visible smoke tests, use goals `clean test -Dcucumber.filter.tags=@smoke -Dh
 
 Do not launch an old **Public Sites - Selenium Assessment** configuration: that was a comparison probe, not this portfolio suite.
 
-Parallel execution is enabled by default with 2 scenario workers. Use goals `clean test -Dheadless=false` in Eclipse to watch the parallel browsers, or `clean test -Dscenarios.parallel=false -Dheadless=false` for one browser at a time. Remove an old `-Dthreads=8` override if present. GitHub Actions uses 2 workers.
+Parallel execution is enabled by default with 2 scenario workers. Use goals `clean test -Dheadless=false` in Eclipse to watch the parallel browsers, or `clean test -Dscenarios.parallel=false -Dheadless=false` for one browser at a time. Remove an old `-Dthreads=8` override if present. GitHub Actions defaults to 1 worker; its manual comparison input can select 2. Local defaults remain unchanged.

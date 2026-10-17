@@ -1,0 +1,328 @@
+{
+  "startedUtc": "2026-10-17T20:03:00.771534592Z",
+  "finishedUtc": "2026-10-17T20:03:19.287952072Z",
+  "mode": "browser-execution",
+  "javaVersion": "17.0.20.1",
+  "os": "Linux",
+  "browser": "chrome",
+  "headless": true,
+  "parallel": true,
+  "configuredWorkers": 2,
+  "tagFilter": "",
+  "liveCucumber": {
+    "total": 3,
+    "skipped": 0,
+    "passed": 3,
+    "failed": 0
+  },
+  "browserComponents": {
+    "total": 8,
+    "skipped": 0,
+    "passed": 8,
+    "failed": 0
+  },
+  "otherTests": {
+    "total": 0,
+    "skipped": 0,
+    "passed": 0,
+    "failed": 0
+  },
+  "totalTestMethods": {
+    "total": 11,
+    "skipped": 0,
+    "passed": 11,
+    "failed": 0
+  },
+  "configurationFailures": 0,
+  "configurationSkips": 0,
+  "source": "TestNG result sets; Extent remains Cucumber-only",
+  "surefireDirectory": "target/surefire-reports",
+  "cucumberEvents": {
+    "started": "2026-10-17T20:03:08.143254624Z",
+    "total": 3,
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "passPercentage": 100.0,
+    "durationSeconds": 10,
+    "parallel": true,
+    "configuredWorkers": 2,
+    "peakConcurrentScenarios": 2
+  },
+  "cucumberCountsAgree": true,
+  "github": {
+    "id": 39065030757,
+    "url": "https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39065030757",
+    "status": "completed",
+    "conclusion": "success",
+    "commit": "3fa54f3a3a64a27adcb22b40611fb9ac5d5a8dc0",
+    "created": "2026-10-17T20:02:35Z",
+    "jobs": [
+      {
+        "id": 117490760755,
+        "name": "regression",
+        "status": "completed",
+        "conclusion": "success",
+        "started": "2026-10-17T20:02:38Z",
+        "finished": "2026-10-17T20:03:24Z",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Set up Java 17 and Maven dependency cache",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install pinned Chrome and matching driver",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Record Java, Maven and Chrome versions",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Record runner capacity and verified HTTPS reachability",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Configure packaged Chrome sandbox helper",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Diagnose Chrome startup without application traffic",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Execute selected scenarios and component checks",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Record post-execution HTTPS reachability",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Validate and summarize actual result categories",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload execution evidence",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Set up Java 17 and Maven dependency cache",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "scopeLabel": "affected-2workers",
+  "surefire": {
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "resources": {
+    "samples": 6,
+    "liveScenarioSamples": 2,
+    "logicalCpus": 4,
+    "memTotalGiB": 15.61,
+    "minAvailableGiB": 13.03,
+    "cpuBusyMeanPercent": 70.32,
+    "cpuBusyPeakPercent": 73.77,
+    "peakChromeRssSumMiB": 4047.15,
+    "peakChromeProcesses": 37,
+    "cgroupMemoryEventDelta": {},
+    "note": "RSS sums double-count shared pages; CPU is whole-runner utilization. Historical failing run had no resource samples.",
+    "cgroupMemoryEventsAvailable": false,
+    "oomKillsObserved": null
+  },
+  "httpsBefore": {
+    "utc": "2026-10-17T20:02:49.684605+00:00",
+    "url": "https://automationexercise.com/",
+    "tlsVerification": true,
+    "dnsAddresses": [
+      "104.21.82.30",
+      "172.67.151.201",
+      "2606:4700:3032::6815:521e",
+      "2606:4700:3034::ac43:97c9"
+    ],
+    "status": 403,
+    "headers": {
+      "Server": "cloudflare",
+      "CF-Ray": "a4c1e7353c1d615f-ORD",
+      "Date": "Sat, 17 Oct 2026 20:02:49 GMT",
+      "Content-Type": "text/plain; charset=UTF-8"
+    },
+    "title": "",
+    "durationSeconds": 0.121
+  },
+  "httpsAfter": {
+    "utc": "2026-10-17T20:03:19.753057+00:00",
+    "url": "https://automationexercise.com/",
+    "tlsVerification": true,
+    "dnsAddresses": [
+      "104.21.82.30",
+      "172.67.151.201",
+      "2606:4700:3032::6815:521e",
+      "2606:4700:3034::ac43:97c9"
+    ],
+    "status": 403,
+    "headers": {
+      "Server": "cloudflare",
+      "CF-Ray": "a4c1e7f0db23615f-ORD",
+      "Date": "Sat, 17 Oct 2026 20:03:19 GMT",
+      "Content-Type": "text/plain; charset=UTF-8"
+    },
+    "title": "",
+    "durationSeconds": 0.101
+  },
+  "network": {
+    "files": 3,
+    "events": 1557,
+    "responseStatusCounts": {
+      "200": 634,
+      "204": 139
+    },
+    "loadingErrorCounts": {
+      "": 36,
+      "net::ERR_ABORTED": 32,
+      "net::ERR_FAILED": 1
+    },
+    "firstPartyDocuments": [
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/product_details/2",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 34,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 34,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 34,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Login requires email and password",
+        "line": 28,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Login requires email and password",
+        "line": 28,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      }
+    ],
+    "unavailable": []
+  },
+  "observedBrowserVersions": ["155.0.8059.84"],
+  "scenarioRows": [
+    {
+      "feature": "authentication/authentication.feature",
+      "line": 28
+    },
+    {
+      "feature": "cart/cart.feature",
+      "line": 16
+    },
+    {
+      "feature": "registration/registration.feature",
+      "line": 34
+    }
+  ],
+  "allOriginalComponentsPreserved": true,
+  "allOriginalLiveScenariosPreserved": false,
+  "failedMethods": []
+}

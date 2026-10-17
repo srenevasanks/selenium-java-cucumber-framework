@@ -1,0 +1,20 @@
+[
+  {
+    "scenario": "Login requires email and password",
+    "line": 28,
+    "screenshot": "ci-login-origin-tls-525.png",
+    "sha256": "ec00c400c7cc1137a928994112b4f228952fe49f7db680feadca117bf0c6d1bc"
+  },
+  {
+    "scenario": "Cart contains multiple products",
+    "line": 16,
+    "screenshot": "ci-cart-renderer-timeout.png",
+    "sha256": "49692580cd0f8f9f8ab56a51111a48f933beb1ccde68dbc9a3da76ef0111ba1d"
+  },
+  {
+    "scenario": "Registration requires profile and address information",
+    "line": 34,
+    "screenshot": "ci-registration-renderer-timeout.png",
+    "sha256": "4d62db9e67f995440648290ce2343aa0f51bc88bb30e99b100e3af005850e9e1"
+  }
+]

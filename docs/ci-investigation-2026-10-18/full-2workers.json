@@ -1,0 +1,1359 @@
+{
+  "startedUtc": "2026-10-17T20:05:18.651281293Z",
+  "finishedUtc": "2026-10-17T20:08:03.189057733Z",
+  "mode": "browser-execution",
+  "javaVersion": "17.0.20.1",
+  "os": "Linux",
+  "browser": "chrome",
+  "headless": true,
+  "parallel": true,
+  "configuredWorkers": 2,
+  "tagFilter": "",
+  "liveCucumber": {
+    "passed": 30,
+    "failed": 0,
+    "total": 30,
+    "skipped": 0
+  },
+  "browserComponents": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "skipped": 0
+  },
+  "otherTests": {
+    "passed": 0,
+    "failed": 0,
+    "total": 0,
+    "skipped": 0
+  },
+  "totalTestMethods": {
+    "passed": 38,
+    "failed": 0,
+    "total": 38,
+    "skipped": 0
+  },
+  "configurationFailures": 0,
+  "configurationSkips": 0,
+  "source": "TestNG result sets; Extent remains Cucumber-only",
+  "surefireDirectory": "target/surefire-reports",
+  "cucumberEvents": {
+    "started": "2026-10-17T20:05:29.047212324Z",
+    "total": 30,
+    "passed": 30,
+    "failed": 0,
+    "skipped": 0,
+    "passPercentage": 100.0,
+    "durationSeconds": 153,
+    "parallel": true,
+    "configuredWorkers": 2,
+    "peakConcurrentScenarios": 2
+  },
+  "cucumberCountsAgree": true,
+  "github": {
+    "id": 39065187643,
+    "url": "https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39065187643",
+    "status": "completed",
+    "conclusion": "success",
+    "commit": "3fa54f3a3a64a27adcb22b40611fb9ac5d5a8dc0",
+    "created": "2026-10-17T20:04:47Z",
+    "jobs": [
+      {
+        "id": 117491241853,
+        "name": "regression",
+        "status": "completed",
+        "conclusion": "success",
+        "started": "2026-10-17T20:04:51Z",
+        "finished": "2026-10-17T20:08:08Z",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Set up Java 17 and Maven dependency cache",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install pinned Chrome and matching driver",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Record Java, Maven and Chrome versions",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Record runner capacity and verified HTTPS reachability",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Configure packaged Chrome sandbox helper",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Diagnose Chrome startup without application traffic",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Execute selected scenarios and component checks",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Record post-execution HTTPS reachability",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Validate and summarize actual result categories",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Upload execution evidence",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Set up Java 17 and Maven dependency cache",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "scopeLabel": "full-2workers",
+  "surefire": {
+    "tests": 38,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "resources": {
+    "samples": 35,
+    "liveScenarioSamples": 31,
+    "logicalCpus": 4,
+    "memTotalGiB": 15.61,
+    "minAvailableGiB": 12.33,
+    "cpuBusyMeanPercent": 71.24,
+    "cpuBusyPeakPercent": 85.0,
+    "peakChromeRssSumMiB": 4855.41,
+    "peakChromeProcesses": 39,
+    "cgroupMemoryEventDelta": {},
+    "note": "RSS sums double-count shared pages; CPU is whole-runner utilization. Historical failing run had no resource samples.",
+    "cgroupMemoryEventsAvailable": false,
+    "oomKillsObserved": null
+  },
+  "httpsBefore": {
+    "utc": "2026-10-17T20:05:08.454025+00:00",
+    "url": "https://automationexercise.com/",
+    "tlsVerification": true,
+    "dnsAddresses": [
+      "104.21.82.30",
+      "172.67.151.201",
+      "2606:4700:3032::6815:521e",
+      "2606:4700:3034::ac43:97c9"
+    ],
+    "status": 403,
+    "headers": {
+      "Server": "cloudflare",
+      "CF-Ray": "a4c1ea985d31e8d8-SJC",
+      "Date": "Sat, 17 Oct 2026 20:05:08 GMT",
+      "Content-Type": "text/plain; charset=UTF-8"
+    },
+    "title": "",
+    "durationSeconds": 0.088
+  },
+  "httpsAfter": {
+    "utc": "2026-10-17T20:08:03.762050+00:00",
+    "url": "https://automationexercise.com/",
+    "tlsVerification": true,
+    "dnsAddresses": [
+      "104.21.82.30",
+      "172.67.151.201",
+      "2606:4700:3032::6815:521e",
+      "2606:4700:3034::ac43:97c9"
+    ],
+    "status": 403,
+    "headers": {
+      "Server": "cloudflare",
+      "CF-Ray": "a4c1eedfbbc3e8d8-SJC",
+      "Date": "Sat, 17 Oct 2026 20:08:03 GMT",
+      "Content-Type": "text/plain; charset=UTF-8"
+    },
+    "title": "",
+    "durationSeconds": 0.037
+  },
+  "network": {
+    "files": 30,
+    "events": 18139,
+    "responseStatusCounts": {
+      "200": 7528,
+      "204": 1541
+    },
+    "loadingErrorCounts": {
+      "": 432,
+      "net::ERR_ABORTED": 291
+    },
+    "firstPartyDocuments": [
+      {
+        "scenario": "Search for an existing product",
+        "line": 13,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Search for an existing product",
+        "line": 13,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Search for an existing product",
+        "line": 13,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/account_created",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/checkout",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/payment",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register login discover and purchase a product",
+        "line": 3,
+        "url": "https://automationexercise.com/payment_done/1000",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 32,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 32,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 32,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/product_details/2",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart contains multiple products",
+        "line": 16,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Customer logs in with new credentials and logs out",
+        "line": 8,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Customer logs in with new credentials and logs out",
+        "line": 8,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Customer logs in with new credentials and logs out",
+        "line": 8,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Customer logs in with new credentials and logs out",
+        "line": 8,
+        "url": "https://automationexercise.com/account_created",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Customer logs in with new credentials and logs out",
+        "line": 8,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Customer logs in with new credentials and logs out",
+        "line": 8,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Customer logs in with new credentials and logs out",
+        "line": 8,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Customer logs in with new credentials and logs out",
+        "line": 8,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 33,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 33,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 33,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart survives navigation",
+        "line": 36,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart survives navigation",
+        "line": 36,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart survives navigation",
+        "line": 36,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart survives navigation",
+        "line": 36,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart survives navigation",
+        "line": 36,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Cart survives navigation",
+        "line": 36,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Adding the same product increases its quantity",
+        "line": 24,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Adding the same product increases its quantity",
+        "line": 24,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Adding the same product increases its quantity",
+        "line": 24,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Adding the same product increases its quantity",
+        "line": 24,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Adding the same product increases its quantity",
+        "line": 24,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Adding the same product increases its quantity",
+        "line": 24,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Adding the same product increases its quantity",
+        "line": 24,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register a unique customer",
+        "line": 8,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register a unique customer",
+        "line": 8,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register a unique customer",
+        "line": 8,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register a unique customer",
+        "line": 8,
+        "url": "https://automationexercise.com/account_created",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Register a unique customer",
+        "line": 8,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout reviews customer addresses and order totals",
+        "line": 13,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout reviews customer addresses and order totals",
+        "line": 13,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout reviews customer addresses and order totals",
+        "line": 13,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout reviews customer addresses and order totals",
+        "line": 13,
+        "url": "https://automationexercise.com/account_created",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout reviews customer addresses and order totals",
+        "line": 13,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout reviews customer addresses and order totals",
+        "line": 13,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout reviews customer addresses and order totals",
+        "line": 13,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout reviews customer addresses and order totals",
+        "line": 13,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout reviews customer addresses and order totals",
+        "line": 13,
+        "url": "https://automationexercise.com/checkout",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Navigate through a category and subcategory",
+        "line": 26,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Navigate through a category and subcategory",
+        "line": 26,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Navigate through a category and subcategory",
+        "line": 26,
+        "url": "https://automationexercise.com/category_products/2",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Navigate through a category and subcategory",
+        "line": 26,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Add the selected quantity and validate monetary totals",
+        "line": 12,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Add the selected quantity and validate monetary totals",
+        "line": 12,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Add the selected quantity and validate monetary totals",
+        "line": 12,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Add the selected quantity and validate monetary totals",
+        "line": 12,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Search for a nonexistent product",
+        "line": 16,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Search for a nonexistent product",
+        "line": 16,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Search for a nonexistent product",
+        "line": 16,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Add the selected quantity and validate monetary totals",
+        "line": 13,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Add the selected quantity and validate monetary totals",
+        "line": 13,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Add the selected quantity and validate monetary totals",
+        "line": 13,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Add the selected quantity and validate monetary totals",
+        "line": 13,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Login requires email and password",
+        "line": 27,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Login requires email and password",
+        "line": 27,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Invalid credentials are rejected",
+        "line": 17,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Invalid credentials are rejected",
+        "line": 17,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Invalid credentials are rejected",
+        "line": 17,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/account_created",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/checkout",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/payment",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Place a synthetic demo order",
+        "line": 32,
+        "url": "https://automationexercise.com/payment_done/500",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Login requires email and password",
+        "line": 28,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Login requires email and password",
+        "line": 28,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "New browser session has an empty cart",
+        "line": 42,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "New browser session has an empty cart",
+        "line": 42,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Signup rejects malformed email",
+        "line": 22,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Signup rejects malformed email",
+        "line": 22,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Filter catalog by brand",
+        "line": 31,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Filter catalog by brand",
+        "line": 31,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Filter catalog by brand",
+        "line": 31,
+        "url": "https://automationexercise.com/brand_products/Polo",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Filter catalog by brand",
+        "line": 31,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Existing email cannot be registered twice",
+        "line": 37,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Existing email cannot be registered twice",
+        "line": 37,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Existing email cannot be registered twice",
+        "line": 37,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Existing email cannot be registered twice",
+        "line": 37,
+        "url": "https://automationexercise.com/account_created",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Existing email cannot be registered twice",
+        "line": 37,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Existing email cannot be registered twice",
+        "line": 37,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Existing email cannot be registered twice",
+        "line": 37,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Search for an existing product",
+        "line": 12,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Search for an existing product",
+        "line": 12,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Search for an existing product",
+        "line": 12,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 34,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 34,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Registration requires profile and address information",
+        "line": 34,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Signup requires basic account details",
+        "line": 18,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Signup requires basic account details",
+        "line": 18,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Signup requires basic account details",
+        "line": 19,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Signup requires basic account details",
+        "line": 19,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Remove the last product from the cart",
+        "line": 30,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Remove the last product from the cart",
+        "line": 30,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Remove the last product from the cart",
+        "line": 30,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Remove the last product from the cart",
+        "line": 30,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Product details display catalog attributes",
+        "line": 21,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Product details display catalog attributes",
+        "line": 21,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Product details display catalog attributes",
+        "line": 21,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Payment requires cardholder information",
+        "line": 22,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Payment requires cardholder information",
+        "line": 22,
+        "url": "https://automationexercise.com/login",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Payment requires cardholder information",
+        "line": 22,
+        "url": "https://automationexercise.com/signup",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Payment requires cardholder information",
+        "line": 22,
+        "url": "https://automationexercise.com/account_created",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Payment requires cardholder information",
+        "line": 22,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Payment requires cardholder information",
+        "line": 22,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Payment requires cardholder information",
+        "line": 22,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Payment requires cardholder information",
+        "line": 22,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Payment requires cardholder information",
+        "line": 22,
+        "url": "https://automationexercise.com/checkout",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Payment requires cardholder information",
+        "line": 22,
+        "url": "https://automationexercise.com/payment",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout requires a customer account",
+        "line": 7,
+        "url": "https://automationexercise.com/",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout requires a customer account",
+        "line": 7,
+        "url": "https://automationexercise.com/products",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout requires a customer account",
+        "line": 7,
+        "url": "https://automationexercise.com/product_details/1",
+        "status": 200,
+        "protocol": "h3"
+      },
+      {
+        "scenario": "Checkout requires a customer account",
+        "line": 7,
+        "url": "https://automationexercise.com/view_cart",
+        "status": 200,
+        "protocol": "h3"
+      }
+    ],
+    "unavailable": []
+  },
+  "observedBrowserVersions": ["155.0.8059.84"],
+  "scenarioRows": [
+    {
+      "feature": "authentication/authentication.feature",
+      "line": 8
+    },
+    {
+      "feature": "authentication/authentication.feature",
+      "line": 17
+    },
+    {
+      "feature": "authentication/authentication.feature",
+      "line": 27
+    },
+    {
+      "feature": "authentication/authentication.feature",
+      "line": 28
+    },
+    {
+      "feature": "cart/cart.feature",
+      "line": 12
+    },
+    {
+      "feature": "cart/cart.feature",
+      "line": 13
+    },
+    {
+      "feature": "cart/cart.feature",
+      "line": 16
+    },
+    {
+      "feature": "cart/cart.feature",
+      "line": 24
+    },
+    {
+      "feature": "cart/cart.feature",
+      "line": 30
+    },
+    {
+      "feature": "cart/cart.feature",
+      "line": 36
+    },
+    {
+      "feature": "cart/cart.feature",
+      "line": 42
+    },
+    {
+      "feature": "catalog/catalog.feature",
+      "line": 12
+    },
+    {
+      "feature": "catalog/catalog.feature",
+      "line": 13
+    },
+    {
+      "feature": "catalog/catalog.feature",
+      "line": 16
+    },
+    {
+      "feature": "catalog/catalog.feature",
+      "line": 21
+    },
+    {
+      "feature": "catalog/catalog.feature",
+      "line": 26
+    },
+    {
+      "feature": "catalog/catalog.feature",
+      "line": 31
+    },
+    {
+      "feature": "checkout/checkout.feature",
+      "line": 7
+    },
+    {
+      "feature": "checkout/checkout.feature",
+      "line": 13
+    },
+    {
+      "feature": "checkout/checkout.feature",
+      "line": 22
+    },
+    {
+      "feature": "checkout/checkout.feature",
+      "line": 32
+    },
+    {
+      "feature": "e2e/customer-journey.feature",
+      "line": 3
+    },
+    {
+      "feature": "registration/registration.feature",
+      "line": 8
+    },
+    {
+      "feature": "registration/registration.feature",
+      "line": 18
+    },
+    {
+      "feature": "registration/registration.feature",
+      "line": 19
+    },
+    {
+      "feature": "registration/registration.feature",
+      "line": 22
+    },
+    {
+      "feature": "registration/registration.feature",
+      "line": 32
+    },
+    {
+      "feature": "registration/registration.feature",
+      "line": 33
+    },
+    {
+      "feature": "registration/registration.feature",
+      "line": 34
+    },
+    {
+      "feature": "registration/registration.feature",
+      "line": 37
+    }
+  ],
+  "allOriginalComponentsPreserved": true,
+  "allOriginalLiveScenariosPreserved": true,
+  "failedMethods": []
+}

@@ -10,17 +10,24 @@ The framework uses Cucumber JVM, TestNG, Selenium WebDriver, Maven, Page Objects
 
 See [actual execution results](docs/execution-summary.md), [coverage](docs/test-coverage.md) and [architecture](docs/framework-architecture.md).
 
-## Latest validation — 17 October 2026
+## Latest CI validation — 18 October 2026 (IST)
 
-| Local execution | Live passed/total | Components passed/total | Total passed/total | Failed | Skipped | Surefire duration |
-| --------------- | ----------------: | ----------------------: | -----------------: | -----: | ------: | ----------------: |
-| Smoke           |               8/8 |                     8/8 |              16/16 |      0 |       0 |            75.9 s |
-| Full regression |             30/30 |                     8/8 |              38/38 |      0 |       0 |           191.9 s |
-| Components only |               0/0 |                     8/8 |                8/8 |      0 |       0 |            13.5 s |
+I investigated the three earlier hosted failures and reran the affected examples, then the complete suite with two and one CI workers. I kept every existing scenario and assertion.
 
-Both full and smoke used headless Chrome 155.0.8059.82, Java 17 and two observed scenario workers. The component-only checks also passed independently. [Completed GitHub-hosted run](https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39052648633): **failure** — 27/30 live scenarios, 8/8 component tests; 3 failed test methods and 0 skipped.
+| Hosted execution                                                                                                 | Workers configured / observed | Live passed/total | Components passed/total | Passed | Failed | Skipped | Status  |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------: | ----------------: | ----------------------: | -----: | -----: | ------: | ------- |
+| [affected-2workers](https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39065030757)   |                         2 / 2 |               3/3 |                     8/8 |     11 |      0 |       0 | success |
+| [full-2workers](https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39065187643)       |                         2 / 2 |             30/30 |                     8/8 |     38 |      0 |       0 | success |
+| [full-1worker](https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39065491628)        |                         1 / 1 |             30/30 |                     8/8 |     38 |      0 |       0 | success |
+| [full-1worker-repeat](https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39065942526) |                         1 / 1 |             30/30 |                     8/8 |     38 |      0 |       0 | success |
 
-The report links above open the frozen **15 October** snapshot. Current runtime output is separate; see [the latest execution summary](docs/execution-summary.md) for reviewed results, commands and artifacts.
+[Final complete GitHub Actions run](https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39065942526) · [Failure investigation and screenshots](docs/ci-investigation-2026-10-18/README.md) · [Execution summary](docs/execution-summary.md)
+
+CI defaults to **one worker** on its measured four-CPU runner. Local execution still defaults to **two workers**. One worker reduced observed CPU and Chrome memory footprint; the full two-worker CI run passed too, so I do not claim parallelism caused the original failures. Chrome/ChromeDriver is pinned to 155.0.8059.84 in CI; headless mode, business assertions, NORMAL page loading and existing 30/60-second waits are unchanged.
+
+The historical 525 page showed an origin TLS failure. The two renderer timeouts were not reproduced in the controlled runs. Their precise old cause remains unproven. The [previous 35/38 CI result](docs/review-2026-10-17/ci-verified.json), [38/38 local regression](docs/review-2026-10-17/regression.json) and dated screenshots remain preserved.
+
+The report links at the top open the frozen **15 October** snapshot. Current reports belong to their dated GitHub Actions artifacts.
 
 ## What this project demonstrates
 
@@ -132,7 +139,7 @@ mvn clean test -Dscenarios.parallel=false
 
 For visible execution in Eclipse, use Maven goals `clean test -Dheadless=false`; the POM supplies the parallel defaults. The included **Parallel - Visible Chrome.launch** configuration also sets 2 workers explicitly. Remove any old `-Dthreads=8` override from existing run configurations. The worker count remains configurable, but higher values require separate repeatability validation. Do not use Maven `-T` to control scenario concurrency: `threads` configures TestNG's parallel data provider.
 
-Each scenario has its own driver, cookies, account and state. Extent records the configured worker limit and observed peak concurrent scenarios. Do not run two Maven processes against the same checkout simultaneously because they write the same report paths. GitHub Actions explicitly uses **2 workers** for its runner rather than inheriting the local setting.
+Each scenario has its own driver, cookies, account and state. Extent records the configured worker limit and observed peak concurrent scenarios. Do not run two Maven processes against the same checkout simultaneously because they write the same report paths. GitHub Actions defaults to **1 worker**; its manual input supports the validated 2-worker comparison without changing local defaults.
 
 ## Configuration and data
 
@@ -186,7 +193,7 @@ The full suite normally discovers 30 live scenarios and 8 component tests: 38 te
 
 I keep runtime output separate from the saved reports. `reports/` is a frozen **15 October 2026** snapshot, described in [SNAPSHOT.md](reports/SNAPSHOT.md). Existing direct report links continue to serve it. The first and second passing run evidence remains under `reports/repeatability/`, with the original narrative in [the historical execution summary](docs/execution-summary-2026-10-15.md). A new run does not overwrite these files. Sanitized review summaries are dated under `docs/review-2026-10-17/`; any new published snapshot needs explicit review and a new dated location.
 
-GitHub Actions uses Java 17, stable Chrome with a matching driver, Maven dependency caching, and two scenario workers. The Maven test command resolves dependencies and runs both included test classes. Failures remain failed workflow runs; reports and screenshots upload with `if: always()`. The workflow uses no application secrets. Current hosted validation and its limitations are recorded in [the execution summary](docs/execution-summary.md), separately from local results.
+GitHub Actions uses Java 17, pinned Chrome 155.0.8059.84 with a matching driver, Maven dependency caching, and one scenario worker by default. A manual input selects the full suite or the three affected examples and one/two workers. The Maven test command resolves dependencies and runs both included test classes. Failures remain failed workflow runs; reports and screenshots upload with `if: always()`. The workflow uses no application secrets. Current hosted validation and its limitations are recorded in [the execution summary](docs/execution-summary.md), separately from local results.
 
 ## Troubleshooting and limitations
 
