@@ -37,6 +37,17 @@ jobs:
           mvn -version
           "$CHROME_BINARY" --version
           "$CHROME_DRIVER" --version
+      - name: Diagnose Chrome startup without application traffic
+        env:
+          CHROME_BINARY: ${{ steps.chrome.outputs.chrome-path }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/selenium-diagnostics"
+          if timeout 20s "$CHROME_BINARY" --headless=new --disable-dev-shm-usage --dump-dom about:blank > "$RUNNER_TEMP/selenium-diagnostics/chrome-startup.log" 2>&1; then
+            echo "Chrome preflight succeeded"
+          else
+            echo "Chrome preflight failed; Maven will still attempt the suite and preserve its exit code"
+            cat "$RUNNER_TEMP/selenium-diagnostics/chrome-startup.log"
+          fi
       - name: Execute all scenarios
         env:
           CHROME_BINARY: ${{ steps.chrome.outputs.chrome-path }}
@@ -47,6 +58,20 @@ jobs:
           -Dscenarios.parallel=true -Dthreads=2
           -Dchrome.binary="$CHROME_BINARY"
           -Dwebdriver.chrome.driver="$CHROME_DRIVER"
+      - name: Validate and summarize actual result categories
+        if: always()
+        run: |
+          jq -e '
+            (.liveCucumber.total + .browserComponents.total + .otherTests.total == .totalTestMethods.total)
+            and (.totalTestMethods.passed + .totalTestMethods.failed + .totalTestMethods.skipped == .totalTestMethods.total)
+            and ((has("cucumberCountsAgree") | not) or .cucumberCountsAgree == true)
+          ' target/test-output/execution-summary.json
+          jq -r '
+            "### Actual TestNG results\n\n| Category | Passed | Failed | Skipped | Total |\n|---|---:|---:|---:|---:|",
+            (. as $s | ["liveCucumber", "browserComponents", "otherTests", "totalTestMethods"][] as $k |
+              "| \($k) | \($s[$k].passed) | \($s[$k].failed) | \($s[$k].skipped) | \($s[$k].total) |"),
+            "\nConfiguration failures: \(.configurationFailures); configuration skips: \(.configurationSkips). Extent covers Cucumber only."
+          ' target/test-output/execution-summary.json >> "$GITHUB_STEP_SUMMARY"
       - name: Upload execution evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -55,5 +80,7 @@ jobs:
           path: |
             target/test-output/
             target/surefire-reports/
+            ${{ runner.temp }}/selenium-diagnostics/
           if-no-files-found: warn
           retention-days: 14
+
