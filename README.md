@@ -2,6 +2,8 @@
 
 [![UI automation](https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/workflows/automation.yml/badge.svg)](https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/workflows/automation.yml)
 
+**[Open Extent report](https://srenevasanks.github.io/selenium-java-cucumber-framework/extent-report.html) · [Open Cucumber report](https://srenevasanks.github.io/selenium-java-cucumber-framework/cucumber.html)**
+
 A Java 17 UI automation portfolio project for [Automation Exercise](https://automationexercise.com/). Tests exercise the public application through Chrome: account registration, authentication, product discovery, cart calculations, checkout and synthetic demo order confirmation.
 
 The framework uses Cucumber JVM, TestNG, Selenium WebDriver, Maven, Page Objects, Extent HTML reporting and SLF4J/Logback. Scenarios have independent browser sessions and unique disposable users. There are no automatic retries, skipped failing scenarios or fabricated report statistics.
@@ -156,6 +158,8 @@ docs/            Coverage, architecture, execution and IDE guide
 ```
 
 ## Reports and CI
+
+The links at the top open the saved Extent and Cucumber HTML reports directly in the browser. GitHub Pages serves the report files only; there is no portfolio or landing page. Both reports show the same completed run recorded on 15 October 2026: 30 live scenarios passed, zero failures and zero skips, with two observed concurrent scenarios. The eight separate component checks are covered in Surefire and the execution summary. These links show the checked-in snapshot; later CI runs provide their own artifacts.
 
 Every real run generates:
 

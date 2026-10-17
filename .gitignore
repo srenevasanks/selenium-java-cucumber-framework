@@ -1,6 +1,7 @@
 target/
 reports/*
 !reports/.gitkeep
+!reports/.nojekyll
 !reports/extent-report.html
 !reports/execution-summary.json
 !reports/cucumber.html
