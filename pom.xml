@@ -83,6 +83,10 @@
           </systemPropertyVariables>
           <properties>
             <property>
+              <name>listener</name>
+              <value>reporting.ExecutionSummaryReporter</value>
+            </property>
+            <property>
               <name>dataproviderthreadcount</name>
               <value>${threads}</value>
             </property>

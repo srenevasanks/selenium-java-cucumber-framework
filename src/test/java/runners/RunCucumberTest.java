@@ -9,8 +9,8 @@ import org.testng.annotations.*;
     glue = {"hooks", "stepdefinitions"},
     plugin = {
       "pretty",
-      "json:reports/cucumber.json",
-      "html:reports/cucumber.html",
+      "json:target/test-output/cucumber.json",
+      "html:target/test-output/cucumber.html",
       "reporting.ExtentCucumberReporter"
     },
     monochrome = true)

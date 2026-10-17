@@ -28,6 +28,15 @@ jobs:
         with:
           chrome-version: stable
           install-chromedriver: true
+      - name: Record Java, Maven and Chrome versions
+        env:
+          CHROME_BINARY: ${{ steps.chrome.outputs.chrome-path }}
+          CHROME_DRIVER: ${{ steps.chrome.outputs.chromedriver-path }}
+        run: |
+          java -version
+          mvn -version
+          "$CHROME_BINARY" --version
+          "$CHROME_DRIVER" --version
       - name: Execute all scenarios
         env:
           CHROME_BINARY: ${{ steps.chrome.outputs.chrome-path }}
@@ -44,8 +53,7 @@ jobs:
         with:
           name: automationexercise-execution-${{ github.run_number }}
           path: |
-            reports/
-            screenshots/
+            target/test-output/
             target/surefire-reports/
           if-no-files-found: warn
           retention-days: 14

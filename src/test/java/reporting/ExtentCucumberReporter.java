@@ -50,11 +50,11 @@ public final class ExtentCucumberReporter implements ConcurrentEventListener {
   private void start(TestRunStarted event) {
     started = event.getInstant();
     try {
-      Files.createDirectories(Path.of("reports"));
+      Files.createDirectories(Path.of("target/test-output"));
     } catch (java.io.IOException e) {
       throw new IllegalStateException(e);
     }
-    var spark = new ExtentSparkReporter("reports/extent-report.html");
+    var spark = new ExtentSparkReporter("target/test-output/extent-report.html");
     spark.config().setDocumentTitle("Automation Exercise Automation Results");
     spark.config().setReportName("Automation Exercise | Cucumber execution");
     report.attachReporter(spark);
@@ -146,7 +146,7 @@ public final class ExtentCucumberReporter implements ConcurrentEventListener {
             Config.integer("threads"),
             peakConcurrent.get());
     try {
-      Files.writeString(Path.of("reports/execution-summary.json"), summary);
+      Files.writeString(Path.of("target/test-output/cucumber-summary.json"), summary);
     } catch (java.io.IOException e) {
       throw new IllegalStateException(e);
     }

@@ -2,6 +2,10 @@ package framework.driver;
 
 import framework.config.Config;
 import java.net.URI;
+import java.nio.file.*;
+import java.util.UUID;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chromium.ChromiumDriverLogLevel;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +26,19 @@ public final class DriverManager {
     options.addArguments("--window-size=1440,1000", "--disable-dev-shm-usage");
     if (!Config.get("chrome.binary").isBlank()) options.setBinary(Config.get("chrome.binary"));
     WebDriver driver;
-    if (Config.get("remote.url").isBlank()) driver = new ChromeDriver(options);
+    if (Config.get("remote.url").isBlank()) {
+      Path logs = Path.of("target/test-output/driver-logs");
+      try {
+        Files.createDirectories(logs);
+      } catch (java.io.IOException error) {
+        throw new IllegalStateException("Cannot create ChromeDriver log directory", error);
+      }
+      var service = new ChromeDriverService.Builder()
+          .withLogFile(logs.resolve("chrome-" + UUID.randomUUID() + ".log").toFile())
+          .withLogLevel(ChromiumDriverLogLevel.INFO)
+          .build();
+      driver = new ChromeDriver(service, options);
+    }
     else {
       try {
         driver = new RemoteWebDriver(URI.create(Config.get("remote.url")).toURL(), options);
@@ -31,11 +47,19 @@ public final class DriverManager {
       }
     }
     DRIVERS.set(driver);
-    driver
-        .manage()
-        .timeouts()
-        .pageLoadTimeout(Duration.ofSeconds(Config.integer("pageLoad.seconds")));
-    driver.manage().timeouts().implicitlyWait(Duration.ZERO);
+    try {
+      driver.manage().timeouts().pageLoadTimeout(
+          Duration.ofSeconds(Config.integer("pageLoad.seconds")));
+      driver.manage().timeouts().implicitlyWait(Duration.ZERO);
+    } catch (RuntimeException error) {
+      // Preserve the setup error while releasing a session created before configuration failed.
+      try {
+        stop();
+      } catch (RuntimeException cleanupError) {
+        error.addSuppressed(cleanupError);
+      }
+      throw error;
+    }
   }
 
   public static WebDriver get() {

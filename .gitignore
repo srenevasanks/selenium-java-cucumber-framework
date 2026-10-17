@@ -22,3 +22,6 @@ docs/evidence/
 .project
 .classpath
 .settings/
+
+# New portfolio evidence requires deliberate review; existing snapshots stay tracked.
+!reports/SNAPSHOT.md

@@ -21,8 +21,8 @@ public final class BrowserHooks {
 
   private void capture(Scenario scenario, String label) throws java.io.IOException {
     byte[] png = ((TakesScreenshot) DriverManager.get()).getScreenshotAs(OutputType.BYTES);
-    Files.createDirectories(Path.of("screenshots"));
-    Files.write(Path.of("screenshots", UUID.randomUUID() + ".png"), png);
+    Files.createDirectories(Path.of("target/test-output/screenshots"));
+    Files.write(Path.of("target/test-output/screenshots", UUID.randomUUID() + ".png"), png);
     scenario.attach(png, "image/png", label);
   }
 
