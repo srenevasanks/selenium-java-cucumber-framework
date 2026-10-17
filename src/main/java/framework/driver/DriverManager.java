@@ -4,6 +4,9 @@ import framework.config.Config;
 import java.net.URI;
 import java.nio.file.*;
 import java.util.UUID;
+import java.util.logging.Level;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chromium.ChromiumDriverLogLevel;
 import java.time.Duration;
@@ -22,6 +25,11 @@ public final class DriverManager {
       throw new IllegalArgumentException("Only Chrome is supported");
     if (DRIVERS.get() != null) throw new IllegalStateException("Driver already initialized");
     ChromeOptions options = new ChromeOptions();
+    if (Boolean.getBoolean("ci.diagnostics")) {
+      LoggingPreferences logs = new LoggingPreferences();
+      logs.enable(LogType.PERFORMANCE, Level.ALL);
+      options.setCapability("goog:loggingPrefs", logs);
+    }
     if (Config.bool("headless")) options.addArguments("--headless=new");
     options.addArguments("--window-size=1440,1000", "--disable-dev-shm-usage");
     if (!Config.get("chrome.binary").isBlank()) options.setBinary(Config.get("chrome.binary"));

@@ -5,16 +5,29 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      scope:
+        description: Complete regression or the three previously failing examples
+        type: choice
+        options: [full, affected]
+        default: full
+      workers:
+        description: CI scenario workers; local default remains two
+        type: choice
+        options: ['1', '2']
+        default: '1'
 permissions:
   contents: read
 concurrency:
   group: automationexercise-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   regression:
     runs-on: ubuntu-24.04
     env:
       CHROME_DEVEL_SANDBOX: /opt/google/chrome/chrome-sandbox
+      CI_WORKERS: ${{ inputs.workers || '1' }}
+      CI_SCOPE: ${{ inputs.scope || 'full' }}
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -24,11 +37,11 @@ jobs:
           distribution: temurin
           java-version: '17'
           cache: maven
-      - name: Install stable Chrome and matching driver
+      - name: Install pinned Chrome and matching driver
         id: chrome
         uses: browser-actions/setup-chrome@v2
         with:
-          chrome-version: stable
+          chrome-version: '155.0.8059.84'
           install-chromedriver: true
       - name: Record Java, Maven and Chrome versions
         env:
@@ -39,6 +52,12 @@ jobs:
           mvn -version
           "$CHROME_BINARY" --version
           "$CHROME_DRIVER" --version
+      - name: Record runner capacity and verified HTTPS reachability
+        run: |
+          mkdir -p "$RUNNER_TEMP/selenium-diagnostics"
+          { nproc; free -b; df -B1 /tmp /dev/shm; ulimit -a; } > "$RUNNER_TEMP/selenium-diagnostics/capacity.txt"
+          cat "$RUNNER_TEMP/selenium-diagnostics/capacity.txt"
+          python3 .github/scripts/ci_diagnostics.py probe "$RUNNER_TEMP/selenium-diagnostics/https-before.json"
       - name: Configure packaged Chrome sandbox helper
         run: |
           test -x "$CHROME_DEVEL_SANDBOX"
@@ -56,16 +75,35 @@ jobs:
             echo "Chrome preflight failed; Maven will still attempt the suite and preserve its exit code"
             cat "$RUNNER_TEMP/selenium-diagnostics/chrome-startup.log"
           fi
-      - name: Execute all scenarios
+      - name: Execute selected scenarios and component checks
         env:
           CHROME_BINARY: ${{ steps.chrome.outputs.chrome-path }}
           CHROME_DRIVER: ${{ steps.chrome.outputs.chromedriver-path }}
-        run: >-
-          mvn --batch-mode --no-transfer-progress clean test
-          -Dheadless=true -Dbrowser=chrome
-          -Dscenarios.parallel=true -Dthreads=2
-          -Dchrome.binary="$CHROME_BINARY"
-          -Dwebdriver.chrome.driver="$CHROME_DRIVER"
+        run: |
+          python3 .github/scripts/ci_diagnostics.py monitor "$RUNNER_TEMP/selenium-diagnostics/resources.jsonl" &
+          MONITOR_PID=$!
+          finish_monitor() {
+            TEST_EXIT=$?
+            trap - EXIT
+            if kill -0 "$MONITOR_PID" 2>/dev/null; then
+              kill "$MONITOR_PID"
+              wait "$MONITOR_PID"
+            fi
+            exit "$TEST_EXIT"
+          }
+          trap finish_monitor EXIT
+          OPTIONS=()
+          if [ "$CI_SCOPE" = "affected" ]; then
+            OPTIONS+=("-Dcucumber.features=src/test/resources/features/authentication/authentication.feature:28,src/test/resources/features/cart/cart.feature:16,src/test/resources/features/registration/registration.feature:34")
+          fi
+          mvn --batch-mode --no-transfer-progress clean test \
+            -Dheadless=true -Dbrowser=chrome -Dci.diagnostics=true \
+            -Dscenarios.parallel=true -Dthreads="$CI_WORKERS" \
+            -Dchrome.binary="$CHROME_BINARY" \
+            -Dwebdriver.chrome.driver="$CHROME_DRIVER" "${OPTIONS[@]}"
+      - name: Record post-execution HTTPS reachability
+        if: always()
+        run: python3 .github/scripts/ci_diagnostics.py probe "$RUNNER_TEMP/selenium-diagnostics/https-after.json"
       - name: Validate and summarize actual result categories
         if: always()
         run: |
@@ -84,7 +122,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: automationexercise-execution-${{ github.run_number }}
+          name: automationexercise-${{ github.run_number }}-${{ inputs.scope || 'full' }}-${{ inputs.workers || '1' }}worker
           path: |
             target/test-output/
             target/surefire-reports/

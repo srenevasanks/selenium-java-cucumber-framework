@@ -26,6 +26,12 @@ public final class BrowserHooks {
     scenario.attach(png, "image/png", label);
   }
 
+  @After(order = 300)
+  public void captureNetworkDiagnostics(Scenario scenario) throws java.io.IOException {
+    if (Boolean.getBoolean("ci.diagnostics") && DriverManager.exists())
+      CiNetworkDiagnostics.capture(scenario);
+  }
+
   @After(order = 200)
   public void evidenceBeforeCleanup(Scenario scenario) throws java.io.IOException {
     if (!DriverManager.exists()) return;
