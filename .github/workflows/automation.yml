@@ -39,9 +39,11 @@ jobs:
           mvn -version
           "$CHROME_BINARY" --version
           "$CHROME_DRIVER" --version
-      - name: Verify packaged Chrome sandbox helper
+      - name: Configure packaged Chrome sandbox helper
         run: |
           test -x "$CHROME_DEVEL_SANDBOX"
+          test "$(stat -c '%U' "$CHROME_DEVEL_SANDBOX")" = root
+          sudo chmod 4755 "$CHROME_DEVEL_SANDBOX"
           stat -c '%a %U %n' "$CHROME_DEVEL_SANDBOX"
       - name: Diagnose Chrome startup without application traffic
         env:
