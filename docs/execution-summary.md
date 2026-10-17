@@ -1,63 +1,72 @@
-# Actual execution evidence — 15 October 2026
+# Verified execution — 17 October 2026
 
-Application: https://automationexercise.com/
+Application: https://automationexercise.com/. The existing framework was reviewed and improved in place. Its feature files, step assertions, page/component behavior and eight component checks were preserved.
 
-## Latest repeatability verification
+## Current local results
 
-The same completed source was run twice consecutively with visible Chrome and two parallel scenario workers:
+| Local execution | Live passed/total | Components passed/total | Total passed/total | Failed | Skipped | Surefire duration |
+| --------------- | ----------------: | ----------------------: | -----------------: | -----: | ------: | ----------------: |
+| Smoke           |               8/8 |                     8/8 |              16/16 |      0 |       0 |            75.9 s |
+| Full regression |             30/30 |                     8/8 |              38/38 |      0 |       0 |           191.9 s |
+| Components only |               0/0 |                     8/8 |                8/8 |      0 |       0 |            13.5 s |
+
+All local executions used Java 17.0.12, Maven 3.9.11, Windows 11 and headless Chrome 155.0.8059.82. Full and smoke runs configured two Cucumber workers and both observed a peak of 2. The component-only class is sequential; its configured worker property is not a claim of two simultaneous component browsers.
+
+Maven compilation succeeded. The full command ended BUILD SUCCESS in 3m 20s; the final smoke command ended BUILD SUCCESS in 1m 23s. Surefire durations above exclude Maven compilation/setup. No retry, skipped-case annotation or assertion change was used to obtain these results. An earlier smoke repetition also passed and is retained in [smoke-initial.json](review-2026-10-17/smoke-initial.json).
+
+## Count consistency
+
+Extent and Cucumber report live scenarios only: 30 in full regression, 8 in smoke. Surefire covers those plus the separate component checks. The automatic consolidated summary groups actual TestNG result sets and reports configuration failures/skips separately. It does not insert component results into Extent or hardcode suite totals.
+
+[Regression](review-2026-10-17/regression.json), [smoke](review-2026-10-17/smoke.json) and [component-only](review-2026-10-17/components.json) summaries were cross-checked against actual TestNG/Surefire XML and Cucumber JSON. Cucumber event counts agree with the corresponding TestNG results. After the component-only invocation, stale Cucumber/Extent files were absent and the consolidated summary correctly recorded zero live cases.
+
+## GitHub Actions
+
+[Completed GitHub-hosted run](https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39052648633): **failure** — 27/30 live scenarios, 8/8 component tests; 3 failed test methods and 0 skipped.
+
+The workflow uses Ubuntu 24.04, Java 17, Maven dependency caching, stable Chrome with matching ChromeDriver, headless mode and two scenario workers. Its Maven command executes both existing discovered classes and preserves the real exit code. Category validation and a generated summary table run after failures; artifacts upload with always(). The archived run metadata includes the actual job-step conclusions and event counts. No application or GitHub secrets are stored in the repository or generated summary.
+
+The final documentation-only update uses `[skip ci]` to avoid repeating a full regression against the public demo. The framework and workflow source are unchanged from the linked, completed validation run. Its failed status remains visible.
+
+The previously completed workflow failed before application interaction. A Chrome-only probe identified Ubuntu user-namespace restrictions, then a root-owned Chrome sandbox helper with mode 777 instead of its required 4755. The workflow sets CHROME_DEVEL_SANDBOX to the packaged helper, verifies its root ownership, and restores the required permissions. It does not pass no-sandbox or globally disable AppArmor. This follows [Chromium's documented sandbox-helper approach](https://chromium.googlesource.com/chromium/src/+/main/docs/security/apparmor-userns-restrictions.md). The earlier failed run remains documented in [ci-startup-failure.json](review-2026-10-17/ci-startup-failure.json); a passing local run is not substituted for hosted evidence.
+
+## Remaining hosted failures
+
+The completed hosted run retained three live failures with no skipped scenarios:
+
+- Login required-password example: [the screenshot](review-2026-10-17/ci-login-origin-tls-525.png) shows **SSL handshake failed, error 525**, an origin-service error rather than the expected homepage.
+- Cart with multiple products: [the screenshot](review-2026-10-17/ci-cart-renderer-timeout.png) and exception show a 60-second Chrome renderer timeout during product navigation.
+- Required registration profile/address example: [the screenshot](review-2026-10-17/ci-registration-renderer-timeout.png) and exception show a renderer timeout while opening the store.
+
+The latter two are hosted timing/rendering failures; their exact underlying cause is not proven by the available artifacts. All three scenarios passed locally. I retained their failures and original expectations, without raising timeouts, adding retries, blocking advertising or changing application checks to obtain a green workflow. The summary-validation and artifact-upload steps succeeded despite the failed Maven command. This is a verified hosted execution, **not a claim of green CI**.
+
+## Reports and preserved evidence
+
+New runtime reports are generated at:
+
+- target/test-output/extent-report.html — Cucumber scenarios only.
+- target/test-output/cucumber.html — the same selected live scenarios.
+- target/test-output/cucumber-summary.json — Cucumber event totals and observed peak concurrency.
+- target/test-output/execution-summary.json — separate categories and aggregate TestNG test-method counts.
+- target/surefire-reports/index.html — all tests, including components.
+
+These ignored directories reflect the most recent command; the final local command was smoke. The full and smoke reports were archived separately before later commands. The full-run Extent, Cucumber and Surefire HTML reports were opened in real Chromium and showed 30 live passes, 100% Cucumber pass status and 38 passed methods respectively.
+
+The existing [published Extent](https://srenevasanks.github.io/selenium-java-cucumber-framework/extent-report.html) and [published Cucumber](https://srenevasanks.github.io/selenium-java-cucumber-framework/cucumber.html) URLs remain functional and intentionally serve the **15 October 2026** snapshot. They were clicked from the GitHub README and verified in Chromium. They are not relabeled as this new review's reports.
+
+All 31 previously tracked report files remain unchanged. [Preservation hashes](review-2026-10-17/preservation-check.json), [the original execution narrative](execution-summary-2026-10-15.md), reports/repeatability/ and docs/latest-execution.json retain historical evidence. [SNAPSHOT.md](../reports/SNAPSHOT.md) explains the frozen snapshot. Runtime logs, driver logs and temporary screenshots are ignored; reviewed evidence is added deliberately under a dated documentation directory.
+
+## Commands actually executed
 
 ```bash
-mvn clean test -Dheadless=false
+mvn --batch-mode --no-transfer-progress test-compile
+mvn --batch-mode --no-transfer-progress clean test -Dcucumber.filter.tags=@smoke -Dheadless=true -Dscenarios.parallel=true -Dthreads=2
+mvn --batch-mode --no-transfer-progress clean test -Dheadless=true -Dscenarios.parallel=true -Dthreads=2
+mvn --batch-mode --no-transfer-progress test -Dtest=AdvertisementTest -Dheadless=true
 ```
 
-| Actual run | Live Cucumber scenarios | Browser component checks | Failures / errors / skips | Observed peak scenarios | Maven duration |
-|---|---:|---:|---|---:|---|
-| Run 1, finished 21:20:49 Asia/Calcutta | 30 passed | 8 passed | 0 / 0 / 0 | 2 | 3 minutes 46 seconds |
-| Run 2, finished 21:24:55 Asia/Calcutta | 30 passed | 8 passed | 0 / 0 / 0 | 2 | 3 minutes 31 seconds |
+The non-clean component-only command specifically checked stale Cucumber-report prevention. Use clean test for an entirely fresh Surefire directory: ordinary Maven test may retain XML from previously executed classes. TestNG's current result sets and the matching class XML were used for that independent component check.
 
-Run 1 started Cucumber at 2026-10-15T15:47:19.688429400Z; Cucumber recorded 208 seconds and TestNG 221.1 seconds. Run 2 started Cucumber at 2026-10-15T15:51:42.623821100Z; Cucumber recorded 192 seconds and TestNG 205.7 seconds.
+## Remaining limits
 
-Cucumber JSON, the Extent event summary and Surefire XML agree: all 6 feature files and 30 live scenarios executed, every live step and hook passed, and Surefire recorded 38 tests with zero failures, errors or skips. Extent intentionally counts the 30 live Cucumber scenarios; the eight deterministic browser component checks are recorded by TestNG/Surefire.
-
-- [Latest Extent HTML](../reports/extent-report.html)
-- [Latest actual summary JSON](../reports/execution-summary.json)
-- [Latest Cucumber JSON](../reports/cucumber.json)
-- [Latest Surefire totals](../reports/surefire/TestSuite.txt)
-- [Run 1 summary](../reports/repeatability/run-1-summary.json) and [Extent HTML](../reports/repeatability/run-1-extent-report.html)
-- [Run 2 summary](../reports/repeatability/run-2-summary.json)
-- [Portfolio snapshot](latest-execution.json)
-
-![Actual completed-order screenshot from the latest end-to-end scenario](images/order-confirmation.png)
-
-## Failures investigated and corrected
-
-The user's latest visible eight-worker report had **14 live scenarios passed and 16 failed**. Navigation remained on the source page in several failures; input clearing also raised InvalidElementStateException. Screenshots showed ordinary ads and clear source pages rather than the expected destination. Failed evidence was archived outside the delivery before rerunning.
-
-An initial two-worker visible diagnostic run still failed five live scenarios. Lower concurrency alone was therefore insufficient. The interaction changes were:
-
-- Center both inputs and links with instant scrolling; check the actual target center with a read-only DOM hit test before native clear, typing or clicks. This prevents actions during smooth-scroll movement or through fixed bottom banners.
-- Track successful native advertisement dismissals. If an ad consumed a navigation link and the browser remains on the unchanged source page, continue that same link once. Form submissions and whole scenarios are not retried.
-- Verify category expansion before using its child link. A subsequent full run reached 29 live passes with one category failure because an ad closed but the category stayed collapsed. A bounded continuation after a real dismissal now checks that the panel actually opens.
-- Add browser fixtures for ad-consumed navigation, ad-consumed category expansion and offscreen fields with smooth scrolling and a fixed banner. These supplement the existing five advertisement cases.
-
-The focused catalog rerun passed all six public catalog scenarios and all eight component checks. Both complete visible runs above then passed without further source changes. Business assertions were not weakened, and no failed scenario was removed or skipped.
-
-The component fixtures are self-owned HTML served temporarily on an ephemeral loopback port. They do not install a local store or replace public-application execution. The framework uses exposed advertising Close controls; it does not block ad requests, remove public-site ad DOM nodes, solve CAPTCHA or bypass security controls.
-
-## Parallel default and earlier verification
-
-Defaults are now **scenarios.parallel=true**, **threads=2**, **headless=true**. The visible Eclipse command overrides only headless. The portable Parallel - Visible Chrome launch configuration explicitly uses two workers. Remove an older threads=8 override from a custom IDE configuration.
-
-An earlier eight-worker headless run genuinely passed 30 live scenarios plus the then-existing five component checks in 1 minute 53 seconds, but later visible runs were unreliable. That single pass did not establish a repeatable maximum. Eight workers is no longer the recommended default. Higher worker counts remain configurable and require separate repeatability validation.
-
-Before these interaction changes, the migrated suite also passed a sequential headless full run and visible/two-thread headless smoke runs. The latest two complete verification runs above were visible; they do not claim that every execution mode or remote environment was rerun after the changes.
-
-## Environment and boundaries
-
-Windows 11, Java 17.0.12, Maven 3.9.11, Chrome 155.0.8059.40, Selenium 4.35.0, Cucumber 7.27.2 and TestNG 7.11.0. JAVA_HOME points at JDK 17. Scenario browsers and disposable accounts are independent. Cleanup deletes only the account created by that scenario; an interrupted run can leave synthetic data behind.
-
-The public checkout is simulated and uses synthetic payment values. Successful confirmation does not validate a real payment gateway. Public-site availability, advertising and product data can change independently of this repository; future failures remain visible in Maven and reports.
-
-GitHub Actions explicitly uses two workers and preserves failures while uploading evidence. The workflow has not been dispatched against the user's repository, so local passes are not a claim of hosted CI success.
-
-Selected actual HTML/JSON, repeatability summaries and Surefire evidence are retained under reports for the portfolio. Runtime logs and screenshot files remain ignored by Git; the dated order image under docs is versioned. Subsequent runs regenerate the main reports from their own results. Earlier failed evidence and older application code remain archived outside the project and ZIP.
+Three hosted live failures remain documented above. Only Chrome is supported, as before. The public site's availability, advertising and fixture product data can change. Selenium's optional missing-CDP warning does not affect these W3C WebDriver tests. An abrupt JVM/runner termination can prevent final reports and account cleanup. No changes to application behavior, business assertions, test-data expectations or scenario coverage were made. See the [targeted review](review-2026-10-17/framework-review.md) and [updated architecture](framework-architecture.md).

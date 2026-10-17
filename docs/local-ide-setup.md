@@ -25,7 +25,7 @@ Parallel goals: `clean test -Dscenarios.parallel=true -Dthreads=2`.
 
 The included `Smoke - Visible Chrome.launch` and `Regression - Headless.launch` files provide equivalent Maven goals. If the IDE imported the project under a different name, update their base directory accordingly.
 
-Open `reports/extent-report.html` in Chrome after execution. Maven/Console and `target/surefire-reports` provide additional diagnostics.
+Open `target/test-output/extent-report.html` in Chrome after execution. Maven/Console and `target/surefire-reports` provide additional diagnostics.
 
 For exact paths on the configured Windows computer, see [RUN-ME.md](../RUN-ME.md).
 

@@ -28,7 +28,7 @@ mvn clean test
 6. Open the generated report:
 
 ```powershell
-Start-Process ".\reports\extent-report.html"
+Start-Process ".\target\test-output\extent-report.html"
 ```
 
 To watch Chrome execute the eight smoke scenarios:
@@ -70,7 +70,7 @@ Ordinary ad popups may appear briefly. Leave the automated Chrome window open; t
 7. Set **Goals** to `clean test -Dheadless=false` to see Chrome.
 8. In the **JRE** tab select the configured **jdk-17**.
 9. Click **Apply**, then **Run**.
-10. After completion, open `reports/extent-report.html` from File Explorer in Chrome.
+10. After completion, open `target/test-output/extent-report.html` from File Explorer in Chrome.
 
 For visible smoke tests, use goals `clean test -Dcucumber.filter.tags=@smoke -Dheadless=false`. The project also includes portable smoke and regression `.launch` files.
 

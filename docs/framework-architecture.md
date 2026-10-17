@@ -4,18 +4,29 @@ The framework separates business examples, test orchestration and browser behavi
 
 ```mermaid
 flowchart TD
-  Features[Gherkin features] --> Runner[Cucumber and TestNG runner]
-  Runner --> Hooks[Browser hooks]
-  Runner --> Steps[Scenario-scoped step definitions]
-  Hooks --> Driver[ThreadLocal WebDriver manager]
-  Steps --> Pages[Page objects]
-  Pages --> Components[Header and advertisement components]
-  Pages --> Driver
-  Pages --> Data[JSON fixture data]
-  Runner --> Events[Cucumber execution events]
-  Events --> Extent[Extent HTML and actual summary JSON]
-  Hooks --> Images[Failure and E2E screenshots]
-  Images --> Extent
+  Maven[Maven Surefire - Java 17] --> Runner[RunCucumberTest - TestNG]
+  Maven --> Fixtures[AdvertisementTest - browser component checks]
+  Features[Six Gherkin feature files] --> Runner
+  Runner --> Provider[Sequential OR parallel data provider]
+  Provider --> Steps[Scenario-local StoreSteps + TestNG assertions]
+  Provider --> Hooks[BrowserHooks]
+  Steps --> Pages[Page Object Model]
+  Pages --> Components[Header + Advertisement components]
+  Pages --> Driver[DriverManager - ThreadLocal WebDriver]
+  Hooks --> Driver
+  Fixtures --> Driver
+  Fixtures --> Loopback[Self-owned loopback HTML fixtures]
+  Steps --> Data[UUID Customer + fixed JSON expectations + BigDecimal]
+  Hooks --> Capture[Failure / E2E PNG attachments]
+  Runner --> Events[Cucumber events keyed by scenario UUID]
+  Capture --> Events
+  Events --> Extent[Extent + Cucumber reports + Cucumber event summary]
+  Maven --> Summary[TestNG ExecutionSummaryReporter]
+  Summary --> Counts[Separate live / component / other / configuration counts]
+  Extent --> Runtime[Ignored target/test-output]
+  Counts --> Runtime
+  Maven --> Surefire[target/surefire-reports - all tests]
+  Snapshot[Frozen reports snapshot - 15 October] --> PagesSite[Existing direct HTML links]
 ```
 
 ## Responsibilities
@@ -31,7 +42,10 @@ flowchart TD
 - JSON products are fixed expected data. Decimal money parsing avoids binary floating-point rounding.
 - Steps express workflow and meaningful assertions. They do not contain raw Selenium element operations.
 - Cleanup runs after evidence capture and before browser teardown. It deletes only the unique disposable account created by that scenario, using the UI and in-memory credentials. Cleanup errors are reported.
-- Extent is populated by actual Cucumber events. UUID-keyed concurrent mappings and atomic counters support parallel scenarios.
+- Extent is populated only by Cucumber events. UUID-keyed concurrent mappings and atomic counters support parallel scenarios. Each scenario has its own Extent test; final flushing occurs after the Cucumber run finishes.
+- `ExecutionSummaryReporter` is registered as a TestNG listener through Surefire. It groups actual passed/failed/skipped result sets by test class after suite execution, without adding component results to Extent. Configuration failures/skips remain separate. When Cucumber executes, its event counts are checked against the corresponding TestNG results in the JSON output. The listener does not change test statuses or swallow assertion failures.
+- At execution start, the listener removes known stale Cucumber HTML/JSON files from the ignored runtime directory. A component-only invocation therefore cannot present an old Cucumber run as current. It never touches curated reports.
+- Local driver startup writes one WARNING-level ChromeDriver log per session under the ignored runtime directory. If timeout configuration fails after session creation, DriverManager attempts teardown, removes the ThreadLocal, and preserves cleanup exceptions as suppressed on the original setup error.
 
 ## Execution
 
@@ -52,3 +66,9 @@ UI account creation keeps setup transparent and verifies actual registration, at
 `components.AdvertisementTest` adds eight deterministic Selenium checks alongside the live Cucumber suite. A JDK HttpServer binds only to loopback on an ephemeral port and serves small, self-owned fixtures. Native Close clicks must update observable fixture state and allow the next page action. The nested case also proves restoration of the main frame context. The late-ad case proves that post-click synchronization dismisses an overlay triggered without navigation. These are component checks, not substitutes for live application scenarios; they appear in TestNG results rather than Extent's Cucumber totals.
 
 Two fixtures also verify continuation of an ad-consumed link and native field editing across a smooth-scrolling page with a fixed bottom banner. The fixture Close handlers remove their own fixture overlays; the framework never removes public-site ad DOM nodes.
+
+## Artifact lifecycle
+
+Runtime reports, screenshots and logs are written only beneath `target/test-output/`; Surefire uses `target/surefire-reports/`. Both are ignored and reset by `mvn clean`. TestNG generates the consolidated summary even after ordinary test failures; a JVM crash or failure before TestNG starts may prevent report generation and is not represented as an empty passing run.
+
+`reports/` retains the original dated, passing snapshot and historical repeatability evidence. It is not a runtime destination. Existing GitHub Pages URLs continue to open Extent and Cucumber directly, with no separate site landing page. Current review summaries live under a dated documentation folder. CI artifacts contain the actual run's runtime output, not the frozen snapshot.

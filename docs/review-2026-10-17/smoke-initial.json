@@ -1,0 +1,60 @@
+{
+  "startedUtc": "2026-10-17T16:59:51.502729600Z",
+  "finishedUtc": "2026-10-17T17:01:14.012173400Z",
+  "mode": "browser-execution",
+  "javaVersion": "17.0.12",
+  "os": "Windows 11",
+  "browser": "chrome",
+  "headless": true,
+  "parallel": true,
+  "configuredWorkers": 2,
+  "tagFilter": "@smoke",
+  "liveCucumber": {
+    "total": 8,
+    "failed": 0,
+    "passed": 8,
+    "skipped": 0
+  },
+  "browserComponents": {
+    "total": 8,
+    "failed": 0,
+    "passed": 8,
+    "skipped": 0
+  },
+  "otherTests": {
+    "total": 0,
+    "failed": 0,
+    "passed": 0,
+    "skipped": 0
+  },
+  "totalTestMethods": {
+    "total": 16,
+    "failed": 0,
+    "passed": 16,
+    "skipped": 0
+  },
+  "configurationFailures": 0,
+  "configurationSkips": 0,
+  "source": "TestNG result sets; Extent remains Cucumber-only",
+  "surefireDirectory": "target/surefire-reports",
+  "cucumberEvents": {
+    "started": "2026-10-17T17:00:10.452915500Z",
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "passPercentage": 100.0,
+    "durationSeconds": 62,
+    "parallel": true,
+    "configuredWorkers": 2,
+    "peakConcurrentScenarios": 2
+  },
+  "cucumberCountsAgree": true,
+  "surefireXmlTotals": {
+    "tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "observedBrowserVersions": ["155.0.8059.82"]
+}

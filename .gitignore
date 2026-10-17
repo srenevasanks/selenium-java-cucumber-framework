@@ -1,4 +1,5 @@
 target/
+# Frozen report snapshots; execution output belongs under ignored target/.
 reports/*
 !reports/.gitkeep
 !reports/.nojekyll

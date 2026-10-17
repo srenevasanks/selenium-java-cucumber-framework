@@ -1,0 +1,146 @@
+{
+  "startedUtc": "2026-10-17T17:11:44.454521856Z",
+  "finishedUtc": "2026-10-17T17:19:29.152690881Z",
+  "mode": "browser-execution",
+  "javaVersion": "17.0.20.1",
+  "os": "Linux",
+  "browser": "chrome",
+  "headless": true,
+  "parallel": true,
+  "configuredWorkers": 2,
+  "tagFilter": "",
+  "liveCucumber": {
+    "failed": 3,
+    "total": 30,
+    "skipped": 0,
+    "passed": 27
+  },
+  "browserComponents": {
+    "failed": 0,
+    "total": 8,
+    "skipped": 0,
+    "passed": 8
+  },
+  "otherTests": {
+    "failed": 0,
+    "total": 0,
+    "skipped": 0,
+    "passed": 0
+  },
+  "totalTestMethods": {
+    "failed": 3,
+    "total": 38,
+    "skipped": 0,
+    "passed": 35
+  },
+  "configurationFailures": 0,
+  "configurationSkips": 0,
+  "source": "TestNG result sets; Extent remains Cucumber-only",
+  "surefireDirectory": "target/surefire-reports",
+  "cucumberEvents": {
+    "started": "2026-10-17T17:11:54.801841970Z",
+    "total": 30,
+    "passed": 27,
+    "failed": 3,
+    "skipped": 0,
+    "passPercentage": 90.0,
+    "durationSeconds": 453,
+    "parallel": true,
+    "configuredWorkers": 2,
+    "peakConcurrentScenarios": 2
+  },
+  "cucumberCountsAgree": true,
+  "githubRunId": 39052648633,
+  "githubRunUrl": "https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39052648633",
+  "sourceCommit": "b94dc0c9e52364ec55e5fe16f9e640d04d68c458",
+  "workflowStatus": "completed",
+  "workflowConclusion": "failure",
+  "jobs": [
+    {
+      "name": "regression",
+      "conclusion": "failure",
+      "started": "2026-10-17T17:11:20Z",
+      "completed": "2026-10-17T17:19:32Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Set up Java 17 and Maven dependency cache",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install stable Chrome and matching driver",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record Java, Maven and Chrome versions",
+          "conclusion": "success"
+        },
+        {
+          "name": "Configure packaged Chrome sandbox helper",
+          "conclusion": "success"
+        },
+        {
+          "name": "Diagnose Chrome startup without application traffic",
+          "conclusion": "success"
+        },
+        {
+          "name": "Execute all scenarios",
+          "conclusion": "failure"
+        },
+        {
+          "name": "Validate and summarize actual result categories",
+          "conclusion": "success"
+        },
+        {
+          "name": "Upload execution evidence",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Set up Java 17 and Maven dependency cache",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "surefireXmlTotals": {
+    "tests": 38,
+    "failures": 3,
+    "errors": 0,
+    "skipped": 0
+  },
+  "observedBrowserVersions": ["155.0.8059.84"],
+  "failedTestMethods": [
+    {
+      "name": "runParallelScenario[\"Login requires email and password\", \"Customer authentication\"](6)",
+      "exception": "org.openqa.selenium.TimeoutException"
+    },
+    {
+      "name": "runParallelScenario[\"Cart contains multiple products\", \"Shopping cart\"](11)",
+      "exception": "org.openqa.selenium.TimeoutException"
+    },
+    {
+      "name": "runParallelScenario[\"Registration requires profile and address information\", \"Customer registration\"](28)",
+      "exception": "org.openqa.selenium.TimeoutException"
+    }
+  ],
+  "diagnosis": [
+    "Chrome sandbox startup repaired and verified by successful browser execution.",
+    "Login required-password example: screenshot shows origin SSL handshake failure, Cloudflare error 525.",
+    "Cart multi-product and registration required-field example: Chrome renderer timeouts on the hosted runner; precise underlying cause unconfirmed."
+  ]
+}

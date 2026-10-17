@@ -1,0 +1,57 @@
+{
+  "startedUtc": "2026-10-17T17:05:57.036770144Z",
+  "finishedUtc": "2026-10-17T17:06:52.674200962Z",
+  "mode": "browser-execution",
+  "javaVersion": "17.0.20.1",
+  "os": "Linux",
+  "browser": "chrome",
+  "headless": true,
+  "parallel": true,
+  "configuredWorkers": 2,
+  "tagFilter": "",
+  "liveCucumber": {
+    "total": 30,
+    "failed": 30,
+    "passed": 0,
+    "skipped": 0
+  },
+  "browserComponents": {
+    "total": 8,
+    "failed": 0,
+    "passed": 0,
+    "skipped": 8
+  },
+  "otherTests": {
+    "total": 0,
+    "failed": 0,
+    "passed": 0,
+    "skipped": 0
+  },
+  "totalTestMethods": {
+    "total": 38,
+    "failed": 30,
+    "passed": 0,
+    "skipped": 8
+  },
+  "configurationFailures": 1,
+  "configurationSkips": 7,
+  "source": "TestNG result sets; Extent remains Cucumber-only",
+  "surefireDirectory": "target/surefire-reports",
+  "cucumberEvents": {
+    "started": "2026-10-17T17:06:01.394770841Z",
+    "total": 30,
+    "passed": 0,
+    "failed": 30,
+    "skipped": 0,
+    "passPercentage": 0.0,
+    "durationSeconds": 50,
+    "parallel": true,
+    "configuredWorkers": 2,
+    "peakConcurrentScenarios": 2
+  },
+  "cucumberCountsAgree": true,
+  "githubRunId": 39052229032,
+  "githubRunUrl": "https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39052229032",
+  "workflowConclusion": "failure",
+  "diagnosis": "Chrome startup: No usable sandbox on hosted Ubuntu; application tests could not start."
+}

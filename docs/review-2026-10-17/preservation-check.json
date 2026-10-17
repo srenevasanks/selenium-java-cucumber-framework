@@ -1,0 +1,132 @@
+{
+  "baselineCommit": "b79d44bb9d76518e051ec02e27e21768706de1c3",
+  "checkedAtUtc": "2026-10-17T17:12:05.943045+00:00",
+  "historicalReportsUnchanged": true,
+  "existingFeaturesAssertionsAndComponentsUnchanged": true,
+  "reports": [
+    {
+      "path": "reports/.gitkeep",
+      "gitBlob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/.nojekyll",
+      "gitBlob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/cucumber.html",
+      "gitBlob": "f2898b7bd411c19766ff5e398a26d22ae1f7f4fa"
+    },
+    {
+      "path": "reports/cucumber.json",
+      "gitBlob": "11a63be91a42489c802987baef227de03783bd64"
+    },
+    {
+      "path": "reports/execution-summary.json",
+      "gitBlob": "41561a13c89ca866ca0d96fa255ebdc1f7a2fc68"
+    },
+    {
+      "path": "reports/extent-report.html",
+      "gitBlob": "e658526b343a53718b7e0e15dd38fb4a811b575c"
+    },
+    {
+      "path": "reports/repeatability/run-1-TestSuite.txt",
+      "gitBlob": "7a2d4161bd8dbec80a82be4f07156e850c9d44ca"
+    },
+    {
+      "path": "reports/repeatability/run-1-extent-report.html",
+      "gitBlob": "3d017f045b9909c891d66220260fd30251ba6444"
+    },
+    {
+      "path": "reports/repeatability/run-1-summary.json",
+      "gitBlob": "68d70451a44ff17aaeb091e82126d8cdd518be9a"
+    },
+    {
+      "path": "reports/repeatability/run-2-TestSuite.txt",
+      "gitBlob": "6a16912f9ca36479cd4f31108bcbfcdbae70c2a5"
+    },
+    {
+      "path": "reports/repeatability/run-2-summary.json",
+      "gitBlob": "41561a13c89ca866ca0d96fa255ebdc1f7a2fc68"
+    },
+    {
+      "path": "reports/surefire/Surefire suite/Surefire test.html",
+      "gitBlob": "18d9a7f20becac72877f5ca59d285c0d8e44514c"
+    },
+    {
+      "path": "reports/surefire/Surefire suite/Surefire test.xml",
+      "gitBlob": "0679120794a4b39e02095d297916d008fa253e34"
+    },
+    {
+      "path": "reports/surefire/TEST-TestSuite.xml",
+      "gitBlob": "7d07b47030de6772f45e6f6e301e55e07e043ff3"
+    },
+    {
+      "path": "reports/surefire/TestSuite.txt",
+      "gitBlob": "6a16912f9ca36479cd4f31108bcbfcdbae70c2a5"
+    },
+    {
+      "path": "reports/surefire/bullet_point.png",
+      "gitBlob": "176e6d5b3d64d032e76c493e5811a1cf839220b5"
+    },
+    {
+      "path": "reports/surefire/collapseall.gif",
+      "gitBlob": "a2d80a9044f38833cb728a69c88294ce3fd007c7"
+    },
+    {
+      "path": "reports/surefire/emailable-report.html",
+      "gitBlob": "13ad4b8b476cb352aa731cb268613cbf0c363a66"
+    },
+    {
+      "path": "reports/surefire/failed.png",
+      "gitBlob": "c117be59a9ecd1da15ebf48f6b7f53496302a7cd"
+    },
+    {
+      "path": "reports/surefire/index.html",
+      "gitBlob": "a84754206572c1cd88dc8323f97f9448ca80989b"
+    },
+    {
+      "path": "reports/surefire/jquery-3.6.0.min.js",
+      "gitBlob": "c4c6022f2982e8dae64cebd6b9a2b59f2547faad"
+    },
+    {
+      "path": "reports/surefire/junitreports/TEST-components.AdvertisementTest.xml",
+      "gitBlob": "b7382460eb49773db5ab3ed5bd753281cbd4c9b3"
+    },
+    {
+      "path": "reports/surefire/junitreports/TEST-runners.RunCucumberTest.xml",
+      "gitBlob": "a41b9fb653b297c7563913f9bd4d9dda5df580d6"
+    },
+    {
+      "path": "reports/surefire/navigator-bullet.png",
+      "gitBlob": "36d90d395c51912e718b89dd88b4a3fb53aa1d85"
+    },
+    {
+      "path": "reports/surefire/passed.png",
+      "gitBlob": "45e85bbfd0f5e85def14b896cfd4331675be2759"
+    },
+    {
+      "path": "reports/surefire/skipped.png",
+      "gitBlob": "c36a324398f7fb72a3e3dbf11535ebdbc6ed016c"
+    },
+    {
+      "path": "reports/surefire/testng-reports.css",
+      "gitBlob": "d7b75c4047823b3b22dc4ad70c92e53d3c16da39"
+    },
+    {
+      "path": "reports/surefire/testng-reports.js",
+      "gitBlob": "c1a84a35d45334bf77bb24e1eb6437ab70a42408"
+    },
+    {
+      "path": "reports/surefire/testng-reports1.css",
+      "gitBlob": "570323ffb8fe16458ee84abf2a8626926609a612"
+    },
+    {
+      "path": "reports/surefire/testng-reports2.js",
+      "gitBlob": "5342859fa4dfba0a9ef56961c5deb2906b922593"
+    },
+    {
+      "path": "reports/surefire/testng-results.xml",
+      "gitBlob": "79486d4587ce5d9613e86a459ae7e32f2df8554e"
+    }
+  ]
+}

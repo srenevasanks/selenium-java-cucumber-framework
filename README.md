@@ -4,24 +4,36 @@
 
 **[Open Extent report](https://srenevasanks.github.io/selenium-java-cucumber-framework/extent-report.html) · [Open Cucumber report](https://srenevasanks.github.io/selenium-java-cucumber-framework/cucumber.html)**
 
-A Java 17 UI automation portfolio project for [Automation Exercise](https://automationexercise.com/). Tests exercise the public application through Chrome: account registration, authentication, product discovery, cart calculations, checkout and synthetic demo order confirmation.
+I built this Java 17 UI automation framework for [Automation Exercise](https://automationexercise.com/). Tests exercise the public application through Chrome: account registration, authentication, product discovery, cart calculations, checkout and synthetic demo order confirmation.
 
 The framework uses Cucumber JVM, TestNG, Selenium WebDriver, Maven, Page Objects, Extent HTML reporting and SLF4J/Logback. Scenarios have independent browser sessions and unique disposable users. There are no automatic retries, skipped failing scenarios or fabricated report statistics.
 
 See [actual execution results](docs/execution-summary.md), [coverage](docs/test-coverage.md) and [architecture](docs/framework-architecture.md).
 
+## Latest validation — 17 October 2026
+
+| Local execution | Live passed/total | Components passed/total | Total passed/total | Failed | Skipped | Surefire duration |
+| --------------- | ----------------: | ----------------------: | -----------------: | -----: | ------: | ----------------: |
+| Smoke           |               8/8 |                     8/8 |              16/16 |      0 |       0 |            75.9 s |
+| Full regression |             30/30 |                     8/8 |              38/38 |      0 |       0 |           191.9 s |
+| Components only |               0/0 |                     8/8 |                8/8 |      0 |       0 |            13.5 s |
+
+Both full and smoke used headless Chrome 155.0.8059.82, Java 17 and two observed scenario workers. The component-only checks also passed independently. [Completed GitHub-hosted run](https://github.com/srenevasanks/selenium-java-cucumber-framework/actions/runs/39052648633): **failure** — 27/30 live scenarios, 8/8 component tests; 3 failed test methods and 0 skipped.
+
+The report links above open the frozen **15 October** snapshot. Current runtime output is separate; see [the latest execution summary](docs/execution-summary.md) for reviewed results, commands and artifacts.
+
 ## What this project demonstrates
 
-The suite validates complete customer journeys rather than isolated element clicks. Gherkin describes the business behavior, step definitions coordinate scenario state and assertions, and page objects encapsulate Selenium interactions. ThreadLocal drivers, scenario-local customers, explicit waits, account cleanup and event-driven reporting support independent parallel execution.
+I use the suite to check complete customer journeys as well as focused validations. Gherkin describes the business behavior, step definitions coordinate scenario state and assertions, and page objects encapsulate Selenium interactions. ThreadLocal drivers, scenario-local customers, explicit waits, account cleanup and event-driven reporting support independent parallel execution.
 
-| Coverage | Live scenarios |
-|---|---:|
-| Registration and form validation | 8 |
-| Login, logout and invalid credentials | 4 |
-| Search, product details, categories and brand filtering | 6 |
-| Cart quantities, totals, removal and persistence | 7 |
-| Checkout validation and simulated order confirmation | 4 |
-| Complete customer journey | 1 |
+| Coverage                                                | Live scenarios |
+| ------------------------------------------------------- | -------------: |
+| Registration and form validation                        |              8 |
+| Login, logout and invalid credentials                   |              4 |
+| Search, product details, categories and brand filtering |              6 |
+| Cart quantities, totals, removal and persistence        |              7 |
+| Checkout validation and simulated order confirmation    |              4 |
+| Complete customer journey                               |              1 |
 
 Eight additional browser component checks exercise advertisement dismissal and input/navigation synchronization. See the coverage document for individual assertions and unsupported application features.
 
@@ -46,7 +58,7 @@ Install Java **17**, Maven **3.9+**, Git and Google Chrome. An internet connecti
 2. Open a terminal **inside the directory containing `pom.xml`**.
 3. Check `java -version` and `mvn -version`. Maven must report Java 17.
 4. Run `mvn clean test`.
-5. Open `reports/extent-report.html` in Chrome after Maven finishes.
+5. Open `target/test-output/extent-report.html` in Chrome after Maven finishes.
 
 ```bash
 git clone https://github.com/srenevasanks/selenium-java-cucumber-framework.git
@@ -62,16 +74,16 @@ For this configured Windows computer, see [RUN-ME.md](RUN-ME.md). For Eclipse, s
 
 ## Technology
 
-| Component | Version |
-|---|---|
-| Java language target | 17 |
-| Selenium WebDriver | 4.35.0 |
-| Cucumber JVM | 7.27.2 |
-| TestNG | 7.11.0 |
-| Extent Reports | 5.1.2 |
-| Jackson JSON | 2.19.2 |
-| SLF4J / Logback | 2.0.17 / 1.5.18 |
-| Maven Compiler / Surefire | 3.14.0 / 3.5.3 |
+| Component                 | Version         |
+| ------------------------- | --------------- |
+| Java language target      | 17              |
+| Selenium WebDriver        | 4.35.0          |
+| Cucumber JVM              | 7.27.2          |
+| TestNG                    | 7.11.0          |
+| Extent Reports            | 5.1.2           |
+| Jackson JSON              | 2.19.2          |
+| SLF4J / Logback           | 2.0.17 / 1.5.18 |
+| Maven Compiler / Surefire | 3.14.0 / 3.5.3  |
 
 Versions are pinned in the POM. The implementation uses standard W3C WebDriver commands; Chrome DevTools integration is not required.
 
@@ -152,8 +164,8 @@ src/test/resources/
   features/      Six functional feature files
   config/        Execution defaults
   testdata/      Synthetic addresses and catalog fixtures
-reports/         Generated HTML, Cucumber JSON and execution summary
-screenshots/     Generated PNG evidence
+reports/         Frozen published report snapshot and historical repeatability evidence
+target/test-output/ Ignored runtime reports, summaries, logs and screenshots
 docs/            Coverage, architecture, execution and IDE guide
 ```
 
@@ -161,18 +173,20 @@ docs/            Coverage, architecture, execution and IDE guide
 
 The links at the top open the saved Extent and Cucumber HTML reports directly in the browser. GitHub Pages serves the report files only; there is no portfolio or landing page. Both reports show the same completed run recorded on 15 October 2026: 30 live scenarios passed, zero failures and zero skips, with two observed concurrent scenarios. The eight separate component checks are covered in Surefire and the execution summary. These links show the checked-in snapshot; later CI runs provide their own artifacts.
 
-Every real run generates:
+Every real run generates ignored runtime output:
 
-- `reports/extent-report.html`: dates, duration, feature/scenario names, individual steps, errors, browser/environment details, counts and pass percentage.
-- `reports/execution-summary.json`: machine-readable actual totals.
-- `reports/cucumber.html` and `reports/cucumber.json`: standard Cucumber output.
-- `screenshots/*.png`: failures and completed E2E order confirmation, also embedded in Extent.
-- `target/surefire-reports/`: Maven/TestNG results.
-- `reports/execution.log`: application logging.
+- `target/test-output/extent-report.html`: **live Cucumber scenarios only**, with steps and screenshots.
+- `target/test-output/cucumber-summary.json`: actual Cucumber event totals and observed concurrency.
+- `target/test-output/execution-summary.json`: consolidated **TestNG test-method results**, grouped as live Cucumber, browser components, and any other tests. Configuration failures/skips are reported separately.
+- `target/test-output/cucumber.html` and `cucumber.json`: standard Cucumber output.
+- `target/test-output/screenshots/`, `driver-logs/`, and `execution.log`: runtime diagnostics.
+- `target/surefire-reports/`: complete Maven/TestNG results, including the component checks.
 
-Reports represent the most recent command. Save a copy before a new run if you need history. A dated portfolio snapshot of the latest HTML/JSON and Surefire results is retained under `reports/` in Git and in the delivery ZIP. Subsequent runs overwrite these tracked report files with their own results; review those changes before committing. Execution logs and runtime screenshot files remain ignored; the dated order-confirmation image under `docs/images/` is versioned. Report counts are generated from execution events, never manually filled in.
+The full suite normally discovers 30 live scenarios and 8 component tests: 38 test methods. A smoke command selects 8 live scenarios while still running all 8 components: 16 test methods. These are suite descriptions, not constants in the reporter. Every generated total comes from actual result events. On setup failures, Surefire may also count failed configuration invocations in its headline total; the consolidated summary keeps those distinct from test methods so the discrepancy remains visible.
 
-GitHub Actions runs all scenarios on pushes and pull requests with Java 17 and Chrome, and uploads reports/screenshots even after failures. Maven failures remain failed workflow runs. The workflow needs no secrets. GitHub-hosted execution must be verified after pushing to your own repository; local success is not a claim that a remote workflow has run.
+I keep runtime output separate from the saved reports. `reports/` is a frozen **15 October 2026** snapshot, described in [SNAPSHOT.md](reports/SNAPSHOT.md). Existing direct report links continue to serve it. The first and second passing run evidence remains under `reports/repeatability/`, with the original narrative in [the historical execution summary](docs/execution-summary-2026-10-15.md). A new run does not overwrite these files. Sanitized review summaries are dated under `docs/review-2026-10-17/`; any new published snapshot needs explicit review and a new dated location.
+
+GitHub Actions uses Java 17, stable Chrome with a matching driver, Maven dependency caching, and two scenario workers. The Maven test command resolves dependencies and runs both included test classes. Failures remain failed workflow runs; reports and screenshots upload with `if: always()`. The workflow uses no application secrets. Current hosted validation and its limitations are recorded in [the execution summary](docs/execution-summary.md), separately from local results.
 
 ## Troubleshooting and limitations
 
